@@ -20,6 +20,30 @@
         "title": "3. Delite i Sećajte se",
         "text": "Podelite memorijal sa porodicom i prijateljima i prikupite počasti na jednom mestu."
       }
+    },
+    "functionality": {
+      "title": "Pregled Funkcionalnosti:",
+      "alt": "Ruke koje drže mali buket belih cvetova",
+      "info[0]": {
+        "title": "Personalizovani Memorijali",
+        "text": "Kreirajte profile sa detaljnim informacijama, fotografijama i počastima."
+      },
+      "info[1]": {
+        "title": "Integracija sa QR Kodom",
+        "text": "Povežite profile sa fizičkim ili digitalnim QR kodovima za lak pristup."
+      },
+      "info[2]": {
+        "title": "Interaktivne Mape",
+        "text": "Pronađite i navigirajte tačnu lokaciju grobnog mesta unutar groblja."
+      },
+      "info[3]": {
+        "title": "Zid Počasti",
+        "text": "Dozvolite prijateljima i porodici da ostave poruke, cveće ili virtuelne sveće."
+      },
+      "info[4]": {
+        "title": "Okupljanja",
+        "text": "Svima koji su odali pocasti ce stizati mejl podsetnici na okupljanje."
+      }
     }
   }
 }

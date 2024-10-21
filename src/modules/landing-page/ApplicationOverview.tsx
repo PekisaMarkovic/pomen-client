@@ -1,11 +1,11 @@
-import Heading from "@/components/typography/Heading";
+import Heading from "@/components/core/typography/Heading";
 import { generateArrayOfLen } from "@/utils/array";
 import { useTranslations } from "next-intl";
 import SingleDetail from "./partials/SingleDetail";
 
 const translationResource = "landing";
 
-const ApplicationDetails = () => {
+const ApplicationOverview = () => {
   const t = useTranslations(translationResource);
 
   const infos = generateArrayOfLen(3);
@@ -38,4 +38,4 @@ const ApplicationDetails = () => {
   );
 };
 
-export default ApplicationDetails;
+export default ApplicationOverview;

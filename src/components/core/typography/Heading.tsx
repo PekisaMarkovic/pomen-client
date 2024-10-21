@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+import { fontSizes } from "./style/font-sizes";
 import {
   Color,
   FontFamily,
@@ -5,7 +7,7 @@ import {
   FontWeight,
   Spacing,
 } from "@/interfaces/general";
-import { ReactNode } from "react";
+import { fontWeights } from "./style/font-weights";
 
 type Variant = "1" | "2" | "3" | "4" | "5";
 
@@ -40,9 +42,7 @@ const Heading = ({
   textTransform,
   id,
 }: Props) => {
-  const textSize = `text-${size}`;
   const textColor = `text-${color}`;
-  const fontWeight = `font-${weight}`;
   const paddingLeft = pl ? `pl-${pl}` : "";
   const paddingRight = pr ? `pr-${pr}` : "";
   const txtTransform = textTransform || "";
@@ -53,7 +53,11 @@ const Heading = ({
         return (
           <h1
             id={id}
-            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeight} ${textSize} ${textColor} flex gap-x-3 items-center ${className}`}
+            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeights(
+              weight
+            )} ${fontSizes(
+              size
+            )} ${textColor} flex gap-x-3 items-center ${className}`}
           >
             {leftIcon}
             {text}
@@ -64,7 +68,11 @@ const Heading = ({
         return (
           <h2
             id={id}
-            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeight} ${textSize} ${textColor} uppercase flex gap-x-3 items-center ${className}`}
+            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeights(
+              weight
+            )} ${fontSizes(
+              size
+            )} ${textColor} uppercase flex gap-x-3 items-center ${className}`}
           >
             {leftIcon}
             {text}
@@ -75,7 +83,11 @@ const Heading = ({
         return (
           <h3
             id={id}
-            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeight} ${textSize} ${textColor} flex gap-x-3 items-center ${className}`}
+            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeights(
+              weight
+            )} ${fontSizes(
+              size
+            )} ${textColor} flex gap-x-3 items-center ${className}`}
           >
             {leftIcon}
             {text}
@@ -86,7 +98,11 @@ const Heading = ({
         return (
           <h4
             id={id}
-            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeight} ${textSize} ${textColor} flex gap-x-3 items-center ${className}`}
+            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeights(
+              weight
+            )} ${fontSizes(
+              size
+            )} ${textColor} flex gap-x-3 items-center ${className}`}
           >
             {leftIcon}
             {text}
@@ -98,7 +114,11 @@ const Heading = ({
         return (
           <h5
             id={id}
-            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeight} ${textSize} ${textColor} flex gap-x-3 items-center ${className}`}
+            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeights(
+              weight
+            )} ${fontSizes(
+              size
+            )} ${textColor} flex gap-x-3 items-center ${className}`}
           >
             {leftIcon}
             {text}

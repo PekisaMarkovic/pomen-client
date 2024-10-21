@@ -12,11 +12,12 @@ const config: Config = {
       colors: {
         black: "var(--black)",
         white: "var(--white)",
+        overlay: "var(--overlay)",
+        "overlay-dark": "var(--overlay-dark)",
       },
       boxShadow: {
         "drop-down": "rgba(64, 64, 65, 0.16) 0px 12px 24px 0px",
       },
-
       fontFamily: {
         inter: "Montserrat",
       },

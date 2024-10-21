@@ -6,6 +6,8 @@ import {
   Spacing,
 } from "@/interfaces/general";
 import { MouseEventHandler, ReactNode } from "react";
+import { fontWeights } from "./style/font-weights";
+import { fontSizes } from "./style/font-sizes";
 
 type Props = {
   leftIcon?: ReactNode;
@@ -49,9 +51,7 @@ const Paragraph = ({
   pr,
   textTransform,
 }: Props) => {
-  const textSize = `text-${size}`;
   const textColor = `text-${color}`;
-  const fontWeight = `font-${weight}`;
   const paddingLeft = pl ? `pl-${pl}` : "";
   const paddingRight = pr ? `pr-${pr}` : "";
   const txtTransform = textTransform || "";
@@ -64,9 +64,9 @@ const Paragraph = ({
       {leftIcon}
 
       <p
-        className={`font-${fontFamily} ${textSize} ${textColor} ${
+        className={`font-${fontFamily} ${fontSizes(size)} ${textColor} ${
           className || ""
-        } ${fontWeight} ${noWrap ? "truncate" : ""} ${txtTransform}`}
+        } ${fontWeights(weight)} ${noWrap ? "truncate" : ""} ${txtTransform}`}
       >
         {text}
         {isRequired && <span className="text-red">*</span>}

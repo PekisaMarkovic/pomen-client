@@ -1,8 +1,8 @@
 import heroBg from "@/app/assets/landing/hero-bg.webp";
 import Logo from "@/app/icons/Logo";
 import MainLink from "@/components/core/buttons/MainLink";
-import Heading from "@/components/typography/Heading";
-import Paragraph from "@/components/typography/Paragraph";
+import Heading from "@/components/core/typography/Heading";
+import Paragraph from "@/components/core/typography/Paragraph";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -42,7 +42,7 @@ const HeroSection = () => {
           href="#"
           text={t("hero.button")}
           variant="primary"
-          size="medium"
+          size="full"
         />
       </div>
       <Image
