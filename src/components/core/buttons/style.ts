@@ -49,6 +49,12 @@ export const style = ({
       classes.push(variantDefault);
       break;
 
+    case "alt":
+      classes.push(
+        "text-white bg-transprent border-white hover:border-black hover:text-white hover:bg-black border-1 border-solid"
+      );
+      break;
+
     case "secondary":
       classes.push(
         "text-white bg-transprent border-white hover:border-black hover:text-white hover:bg-black border-1 border-solid"

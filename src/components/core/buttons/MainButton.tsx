@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { style } from "./style";
 
-export type Variant = "secondary" | "primary";
+export type Variant = "secondary" | "primary" | "alt";
 
 export type Size = "extra-small" | "small" | "medium" | "large" | "full";
 

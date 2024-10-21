@@ -18,9 +18,9 @@ const Burger = ({ onClick, ...rest }: BurgerProps) => {
       <path
         d="M1 13H16.75M1 7H16.75M1 1H16.75"
         stroke="black"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

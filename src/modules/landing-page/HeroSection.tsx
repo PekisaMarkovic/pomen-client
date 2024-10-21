@@ -24,7 +24,7 @@ const HeroSection = () => {
             id="hero-heading"
             text={t("hero.title")}
             variant="1"
-            size="2xl"
+            size="3xl"
             color="white"
             weight="semibold"
             className="text-center"

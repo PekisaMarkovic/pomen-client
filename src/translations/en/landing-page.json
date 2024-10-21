@@ -5,6 +5,21 @@
       "subTitle": "Kreirajte personalizovane profile i delite drage uspomene bez napora.",
       "alt": "Groblje u sumrak sa upaljenim svećama i ružama postavljenim na grobovima, simbolizujući sećanje i počast.",
       "button": "Zabelezi uspomenu"
+    },
+    "applicationDetails": {
+      "title": "Kako Funkcioniše:",
+      "info[0]": {
+        "title": "1. Kreirajte Profil",
+        "text": "Postavite digitalni memorijal sa ličnim podacima, fotografijama i pričama."
+      },
+      "info[1]": {
+        "title": "2. Naručite Pločicu sa QR Kodom",
+        "text": "Nakon što popunite potrebne podatke i podatke narudžbini, QR kod se automatski generiše, a mi vam pločicu sa kodom šaljemo na kućnu adresu."
+      },
+      "info[2]": {
+        "title": "3. Delite i Sećajte se",
+        "text": "Podelite memorijal sa porodicom i prijateljima i prikupite počasti na jednom mestu."
+      }
     }
   }
 }

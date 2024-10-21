@@ -1,4 +1,5 @@
 import MainNavigation from "@/components/core/navigation/MainNavigation";
+import ApplicationDetails from "@/modules/landing-page/ApplicationDetails";
 import HeroSection from "@/modules/landing-page/HeroSection";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <>
       <MainNavigation />
       <HeroSection />
+      <ApplicationDetails />
     </>
   );
 };
