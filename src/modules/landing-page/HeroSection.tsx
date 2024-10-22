@@ -31,7 +31,7 @@ const HeroSection = () => {
           />
 
           <Paragraph
-            text={t("hero.subTitle")}
+            text={t("hero.subtitle")}
             weight="light"
             size="base"
             className="text-center"

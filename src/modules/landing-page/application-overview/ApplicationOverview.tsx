@@ -1,7 +1,7 @@
 import Heading from "@/components/core/typography/Heading";
 import { generateArrayOfLen } from "@/utils/array";
 import { useTranslations } from "next-intl";
-import SingleDetail from "./partials/SingleDetail";
+import SingleDetail from "./SingleDetail";
 
 const translationResource = "landing";
 

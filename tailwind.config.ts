@@ -16,6 +16,7 @@ const config: Config = {
         "overlay-dark": "var(--overlay-dark)",
       },
       boxShadow: {
+        faq: "1px 4px 10px 0px #00000040",
         "drop-down": "rgba(64, 64, 65, 0.16) 0px 12px 24px 0px",
       },
       fontFamily: {

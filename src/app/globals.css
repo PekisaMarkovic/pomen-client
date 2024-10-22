@@ -3,16 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --black: #fff;
-  --white: #000;
+  --black: #000;
+  --white: #fff;
   --overlay: #00000073;
   --overlay-dark: #000000b2;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --black: #0a0a0a;
-    --white: #ededed;
+    --black: #000;
+    --white: #fff;
+    --overlay: #00000073;
+    --overlay-dark: #000000b2;
   }
 }
 

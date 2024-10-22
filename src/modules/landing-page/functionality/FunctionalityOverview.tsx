@@ -3,7 +3,7 @@ import Heading from "@/components/core/typography/Heading";
 import { generateArrayOfLen } from "@/utils/array";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import SingleFunctionality from "./partials/SingleFunctionality";
+import SingleFunctionality from "./SingleFunctionality";
 
 const translationResource = "landing";
 
@@ -15,7 +15,7 @@ const FunctionalityOverview = () => {
   return (
     <section
       aria-labelledby="application-details"
-      className="relative p-6 flex flex-col gap-y-6"
+      className="relative p-6 flex flex-col gap-y-6 items-center"
     >
       <div className="absolute -z-1 bg-overlay inset-0 w-full h-full object-cover" />
 
@@ -26,6 +26,7 @@ const FunctionalityOverview = () => {
         src={functinalityBg}
         alt={t("functionality.alt")}
       />
+
       <Heading
         id="application-details-title"
         text={t("functionality.title")}
