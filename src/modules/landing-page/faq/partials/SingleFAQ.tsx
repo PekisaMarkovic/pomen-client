@@ -17,21 +17,21 @@ const SingleFAQ = ({ text, title }: SingleFAQProps) => {
   }, []);
 
   return (
-    <div className="flex flex-col shadow-faq px-6 py-5 rounded-sm">
+    <article className="flex flex-col shadow-faq px-6 py-5 rounded-sm">
       <div
         className="flex items-center justify-between cursor-pointer"
         onClick={handleToggle}
       >
         <Paragraph text={title} weight="semibold" size="lg" color="black" />
 
-        <Arrow type={isOpen ? "DOWN" : "RIGNT"} />
+        <Arrow type={isOpen ? "DOWN" : "RIGHT"} />
       </div>
       {isOpen && (
         <div className="mt-5">
           <Paragraph text={text} weight="light" size="lg" color="black" />
         </div>
       )}
-    </div>
+    </article>
   );
 };
 

@@ -74,6 +74,44 @@
         "title": "Okupljanja",
         "text": "Svima koji su odali pocasti ce stizati mejl podsetnici na okupljanje."
       }
+    },
+    "ratings": {
+      "title": "Šta naši korisnici kažu",
+      "info[0]": {
+        "firstName": "Darko",
+        "lastName": "Dakic",
+        "text": "Kreirajte profile sa detaljnim informacijama, fotografijama i počastima.",
+        "img": "",
+        "alt": ""
+      },
+      "info[1]": {
+        "firstName": "Darko",
+        "lastName": "Dakic",
+        "text": "Povežite profile sa fizičkim ili digitalnim QR kodovima za lak pristup.",
+        "img": "",
+        "alt": ""
+      },
+      "info[2]": {
+        "firstName": "Darko",
+        "lastName": "Dakic",
+        "text": "Pronađite i navigirajte tačnu lokaciju grobnog mesta unutar groblja.",
+        "img": "",
+        "alt": ""
+      },
+      "info[3]": {
+        "firstName": "Darko",
+        "lastName": "Dakic",
+        "text": "Dozvolite prijateljima i porodici da ostave poruke, cveće ili virtuelne sveće.",
+        "img": "",
+        "alt": ""
+      },
+      "info[4]": {
+        "firstName": "Darko",
+        "lastName": "Dakic",
+        "text": "Svima koji su odali pocasti ce stizati mejl podsetnici na okupljanje.",
+        "img": "",
+        "alt": ""
+      }
     }
   }
 }

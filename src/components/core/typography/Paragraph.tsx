@@ -8,6 +8,7 @@ import {
 import { MouseEventHandler, ReactNode } from "react";
 import { fontWeights } from "./style/font-weights";
 import { fontSizes } from "./style/font-sizes";
+import { textColor } from "./style/text-color";
 
 type Props = {
   leftIcon?: ReactNode;
@@ -51,7 +52,6 @@ const Paragraph = ({
   pr,
   textTransform,
 }: Props) => {
-  const textColor = `text-${color}`;
   const paddingLeft = pl ? `pl-${pl}` : "";
   const paddingRight = pr ? `pr-${pr}` : "";
   const txtTransform = textTransform || "";
@@ -64,7 +64,7 @@ const Paragraph = ({
       {leftIcon}
 
       <p
-        className={`font-${fontFamily} ${fontSizes(size)} ${textColor} ${
+        className={`font-${fontFamily} ${fontSizes(size)} ${textColor(color)} ${
           className || ""
         } ${fontWeights(weight)} ${noWrap ? "truncate" : ""} ${txtTransform}`}
       >

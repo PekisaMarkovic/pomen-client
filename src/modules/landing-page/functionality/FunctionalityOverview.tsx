@@ -3,7 +3,7 @@ import Heading from "@/components/core/typography/Heading";
 import { generateArrayOfLen } from "@/utils/array";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import SingleFunctionality from "./SingleFunctionality";
+import SingleFunctionality from "./partials/SingleFunctionality";
 
 const translationResource = "landing";
 

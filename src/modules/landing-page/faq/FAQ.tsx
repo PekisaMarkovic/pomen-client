@@ -1,6 +1,6 @@
 import Heading from "@/components/core/typography/Heading";
 import { useTranslations } from "next-intl";
-import SingleFAQ from "./SingleFAQ";
+import SingleFAQ from "./partials/SingleFAQ";
 import { generateArrayOfLen } from "@/utils/array";
 
 const translationResource = "landing";
