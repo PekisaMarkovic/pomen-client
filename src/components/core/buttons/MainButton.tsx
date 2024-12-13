@@ -16,6 +16,7 @@ type Props = {
   rightIcon?: ReactNode;
   isLoading?: boolean;
   disabled?: boolean;
+  noHoverEffect?: boolean;
   onClick?: () => void;
 };
 
@@ -29,6 +30,7 @@ const MainButton = ({
   leftIcon,
   rightIcon,
   ariaLabel,
+  noHoverEffect = false,
   disabled = false,
 }: Props) => {
   return (
@@ -39,6 +41,7 @@ const MainButton = ({
       className={`${style({
         size,
         variant,
+        noHoverEffect,
         disabled,
       })} ${className}`}
       disabled={disabled}

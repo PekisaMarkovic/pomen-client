@@ -8,6 +8,7 @@ import {
   Spacing,
 } from "@/interfaces/general";
 import { fontWeights } from "./style/font-weights";
+import { textColor as textColorPicker } from "./style/text-color";
 
 type Variant = "1" | "2" | "3" | "4" | "5";
 
@@ -42,7 +43,7 @@ const Heading = ({
   textTransform,
   id,
 }: Props) => {
-  const textColor = `text-${color}`;
+  const textColor = textColorPicker(color);
   const paddingLeft = pl ? `pl-${pl}` : "";
   const paddingRight = pr ? `pr-${pr}` : "";
   const txtTransform = textTransform || "";

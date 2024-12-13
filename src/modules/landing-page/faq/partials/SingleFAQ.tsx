@@ -1,7 +1,7 @@
 "use client";
 
-import Arrow from "@/app/icons/general/Arrow";
-import Paragraph from "@/components/core/typography/Paragraph";
+import { Arrow } from "@/app/icons/general";
+import { Paragraph } from "@/components/core";
 import { useCallback, useState } from "react";
 
 type SingleFAQProps = {

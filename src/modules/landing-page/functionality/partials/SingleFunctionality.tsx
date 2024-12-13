@@ -1,4 +1,4 @@
-import Paragraph from "@/components/core/typography/Paragraph";
+import { Paragraph } from "@/components/core";
 
 interface SingleFunctionalityProps {
   title: string;

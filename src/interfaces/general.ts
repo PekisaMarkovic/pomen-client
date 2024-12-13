@@ -55,7 +55,7 @@ export type SelectOption = {
   checked?: boolean;
 };
 
-export type Color = "white" | "black";
+export type Color = "white" | "black" | "grey" | "light-grey";
 
 export interface Paginated<T> {
   items: T[];

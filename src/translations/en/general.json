@@ -1,7 +1,17 @@
 {
   "g": {
     "button": {
-      "submit": "Posalji"
+      "submit": "Submit"
+    },
+    "bababa": {
+      "maxChar": "Max. Characters: {{numberOfChars}}",
+      "maxCharError": "You have exceeded the maximum number of characters"
+    },
+    "navigation": {
+      "home": "Pocetna",
+      "about": "Naš Vodič",
+      "search": "Kontakt",
+      "profile": "Profili"
     }
   }
 }

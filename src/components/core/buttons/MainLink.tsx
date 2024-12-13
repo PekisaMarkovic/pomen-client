@@ -12,6 +12,7 @@ type Props = {
   rightIcon?: ReactNode;
   isLoading?: boolean;
   disabled?: boolean;
+  noHoverEffect?: boolean;
   href: string;
   target?: "_blank" | "_top" | "_parent" | "_self";
 };
@@ -23,6 +24,7 @@ const MainLink = ({
   variant,
   leftIcon,
   rightIcon,
+  noHoverEffect = false,
   disabled = false,
   target,
   className = "",
@@ -33,6 +35,7 @@ const MainLink = ({
       className={`${style({
         size,
         variant,
+        noHoverEffect,
         disabled,
       })} ${className}`}
       target={target}

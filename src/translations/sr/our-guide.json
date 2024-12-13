@@ -1,0 +1,86 @@
+{
+  "our-guide": {
+    "hero": {
+      "text": "Tehnološke inovacije pružaju nove mogućnosti za očuvanje uspomena na naše najmilije. QR kodovi na spomenicima postali su moderan način za očuvanje sećanja na preminule, omogućavajući posetiocima brz pristup digitalnom profilu osobe koja je preminula. Kroz ovaj vodič saznaćete kako QR kodovi na spomenicima pomažu u očuvanju uspomena i kako jednostavno kreirati memorijal."
+    },
+    "why-qr": {
+      "title": "Zašto Dodati QR Kod Na Spomenik?",
+      "alt": "Ruke koje drže mali buket belih cvetova",
+      "text": "QR kod na spomeniku predstavlja digitalni prozor ka životu preminule osobe, pružajući:",
+      "sub-text": "QR kod na spomeniku obezbeđuje trajnost uspomena, čineći ih lako dostupnim na svakom mestu i u svakom trenutku.",
+      "info[0]": {
+        "title": "Biografiju:",
+        "text": "Osnovne podatke poput datuma rođenja i smrti, zajedno sa životnom pričom."
+      },
+      "info[1]": {
+        "title": "Fotografije i Video Zapise:",
+        "text": "Posebni trenuci koji evociraju sećanja, uz moguce povezivanje drustvenih mreza sa nalogom."
+      },
+      "info[2]": {
+        "title": "Mogućnost Ostavljanja Poruka:",
+        "text": "Prijatelji i rodbina mogu ostaviti komentare i upisati se u knjigu sećanja."
+      },
+      "info[3]": {
+        "title": "Lokaciju Grobnog Mesta:",
+        "text": "Precizna lokacija olakšava posetiocima pronalaženje spomenika."
+      }
+    },
+    "step-by-step": {
+      "title": "Korak-Po-Korak Vodič Za Kreiranje Digitalnog Memorijala",
+
+      "info": {
+        "title": "Odaberite platformu za izradu memorijala",
+        "text": "Pomen je specijalizovana platforma za kreiranje QR kodova koji vode ka digitalnim profilima preminulih osoba, pružajući sve neophodne opcije za očuvanje uspomena."
+      },
+
+      "main": {
+        "title": "Prikupite sve važne informacije",
+        "text": "Da biste kreirali kvalitetan memorijal, važno je prikupiti sledeće informacije:",
+
+        "list[0]": {
+          "title": "Biografski podaci:",
+          "text": "Životna priča osobe i njena dostignuća."
+        },
+        "list[1]": {
+          "title": "Porodični i prijateljski odnosi:",
+          "text": "Prikaz najvažnijih ljudi u životu osobe."
+        },
+        "list[2]": {
+          "title": "Fotografije i video snimci:",
+          "text": "Beleženje posebnih trenutaka."
+        },
+        "list[3]": {
+          "title": "Poruke i citati:",
+          "text": "Reči koje su bile značajne za osobu ili njenu porodicu."
+        }
+      },
+
+      "footer": {
+        "title": "Kreirajte QR Kod i Postavite Ga Na Spomenik",
+        "text": "Nakon unosa podataka, platforma generiše QR kod koji možete postaviti na spomenik. QR kod je najbolje postaviti na vidljivo mesto, zaštićen od vremenskih uslova."
+      }
+    },
+    "prons-qr": {
+      "title": "Prednosti QR Kodova Na Spomenicima",
+      "info[0]": {
+        "title": "Povezanost Sa Uspomenama",
+        "text": "QR kod omogućava posetiocima da se brzo povežu sa životom preminule osobe, čineći spomenik mestom bogatim informacijama."
+      },
+      "info[1]": {
+        "title": "Laka Dostupnost i Veza Sa Generacijama",
+        "text": "Posebni trenuci koji evociraju sećanja, uz moguce povezivanje drustvenih mreza sa nalogom."
+      },
+      "info[2]": {
+        "title": "Dugotrajnost Informacija",
+        "text": "Digitalni memorijali traju mnogo duže od štampanih materijala i mogu se lako ažurirati, garantujući trajnost uspomena."
+      }
+    },
+    "join-us": {
+      "title": "Kreiraj uspomene sa nama",
+      "text1": "QR kodovi na spomenicima predstavljaju savremen način očuvanja uspomena. ",
+      "text2": "Ova tehnologija omogućava posetiocima da u svakom trenutku dođu do informacija o voljenima i pruži im osećaj povezanosti sa prošlošću. ",
+      "text3": "Ako želite da trajno očuvate uspomene, razmislite o dodavanju QR koda na spomenik i kreirajte digitalni memorijal koji će trajati generacijama. ",
+      "btn": "Zabeleži uspomenu"
+    }
+  }
+}

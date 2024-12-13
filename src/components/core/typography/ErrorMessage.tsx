@@ -1,18 +1,27 @@
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next";
 
-export type Variant = 'input' | 'select' | 'upload' | 'custom'
+export type Variant = "input" | "select" | "upload" | "custom";
 
 type Props = {
-  message?: string
-  name?: string | null
-  variant?: Variant
-}
+  message?: string;
+  name?: string | null;
+  variant?: Variant;
+};
 const ErrorMessage = ({ name, variant, message }: Props) => {
-  const { t } = useTranslation(['er'])
+  const { t } = useTranslation(["er"]);
 
-  if (message) return <span className="font-poppins text-sm text-red">{message}</span>
+  if (message)
+    return <span className="font-montserrat text-sm text-red">{message}</span>;
 
-  return <>{name && <span className="font-poppins text-sm text-red">{t(`er:${variant}`, { field: t(`er:fields.${name}`) })}</span>}</>
-}
+  return (
+    <>
+      {name && (
+        <span className="font-montserrat text-sm text-red">
+          {t(`er:${variant}`, { field: t(`er:fields.${name}`) })}
+        </span>
+      )}
+    </>
+  );
+};
 
-export default ErrorMessage
+export default ErrorMessage;

@@ -13,14 +13,19 @@ const config: Config = {
         black: "var(--black)",
         white: "var(--white)",
         overlay: "var(--overlay)",
+        grey: "var(--grey)",
+        "light-grey": "var(--light-grey)",
+        "hover-grey": "var(--hover-grey)",
         "overlay-dark": "var(--overlay-dark)",
       },
       boxShadow: {
         faq: "1px 4px 10px 0px #00000040",
         "drop-down": "rgba(64, 64, 65, 0.16) 0px 12px 24px 0px",
+        contact: "0px 4px 10px 0px #00000040",
+        "side-menu": "0px 20px 10px 0px #0000004D",
       },
       fontFamily: {
-        inter: "Montserrat",
+        montserrat: "'Montserrat'",
       },
       borderWidth: {
         1: "1px",

@@ -1,5 +1,4 @@
-import Heading from "@/components/core/typography/Heading";
-import Paragraph from "@/components/core/typography/Paragraph";
+import { Paragraph, Heading } from "@/components/core";
 import Image from "next/image";
 
 type SingleRatingProps = {

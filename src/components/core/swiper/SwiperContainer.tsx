@@ -1,6 +1,6 @@
 "use client";
 
-import Arrow from "@/app/icons/general/Arrow";
+import { Arrow } from "@/app/icons/general";
 import { PropsWithChildren } from "react";
 import Slider from "react-slick";
 

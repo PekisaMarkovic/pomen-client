@@ -2,10 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../app/fonts/Montserrat-Thin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../app/fonts/Montserrat-ExtraLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../app/fonts/Montserrat-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../app/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../app/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../app/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../app/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../app/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../app/fonts/Montserrat-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+* {
+  font-family: "Montserrat";
+}
 :root {
   --black: #000;
   --white: #fff;
   --overlay: #00000073;
+  --grey: #00000099;
+  --light-grey: #e6e9ec;
+  --hover-grey: #f3f6f8;
   --overlay-dark: #000000b2;
 }
 
@@ -14,6 +82,9 @@
     --black: #000;
     --white: #fff;
     --overlay: #00000073;
+    --grey: #00000099;
+    --light-grey: #e6e9ec;
+    --hover-grey: #f3f6f8;
     --overlay-dark: #000000b2;
   }
 }

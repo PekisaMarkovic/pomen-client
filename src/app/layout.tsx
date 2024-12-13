@@ -1,63 +1,8 @@
 import * as React from "react";
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
-
-const monBlack = localFont({
-  src: "./fonts/Montserrat-Black.ttf",
-  variable: "--font-mons-black",
-  weight: "900",
-});
-
-const monExtraBold = localFont({
-  src: "./fonts/Montserrat-ExtraBold.ttf",
-  variable: "--font-mons-extra-bold",
-  weight: "800",
-});
-
-const monBold = localFont({
-  src: "./fonts/Montserrat-Bold.ttf",
-  variable: "--font-mons-bold",
-  weight: "700",
-});
-
-const monSemiBold = localFont({
-  src: "./fonts/Montserrat-SemiBold.ttf",
-  variable: "--font-mons-semi-bold",
-  weight: "600",
-});
-
-const monMedium = localFont({
-  src: "./fonts/Montserrat-Medium.ttf",
-  variable: "--font-mons-medium",
-  weight: "500",
-});
-
-const monRegular = localFont({
-  src: "./fonts/Montserrat-Regular.ttf",
-  variable: "--font-mons-regular",
-  weight: "400",
-});
-
-const monLight = localFont({
-  src: "./fonts/Montserrat-Light.ttf",
-  variable: "--font-mons-light",
-  weight: "300",
-});
-
-const monExtraLight = localFont({
-  src: "./fonts/Montserrat-ExtraLight.ttf",
-  variable: "--font-mons-extra-light",
-  weight: "200",
-});
-
-const monThin = localFont({
-  src: "./fonts/Montserrat-Thin.ttf",
-  variable: "--font-mons-thin",
-  weight: "100",
-});
 
 const keywords = [
   "memorijalni profili",
@@ -133,9 +78,7 @@ export default async function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
       </head>
-      <body
-        className={`${monBlack.variable} ${monBold.variable} ${monExtraBold.variable} ${monSemiBold.variable} ${monRegular.variable} ${monMedium.variable} ${monLight.variable} ${monExtraLight.variable} ${monThin.variable} antialiased`}
-      >
+      <body>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

@@ -5,9 +5,33 @@ export default getRequestConfig(async () => {
   // read from `cookies()`, `headers()`, etc.
   const locale = "sr";
 
+  const translations = async () => {
+    const generalTranslation = await await import(
+      `../translations/${locale}/general.json`
+    );
+
+    const landingPageTranslation = await await import(
+      `../translations/${locale}/landing-page.json`
+    );
+
+    const ourGuidePageTranslation = await await import(
+      `../translations/${locale}/our-guide.json`
+    );
+
+    const ourSearchPageTranslation = await await import(
+      `../translations/${locale}/search.json`
+    );
+
+    return {
+      ...generalTranslation,
+      ...landingPageTranslation,
+      ...ourGuidePageTranslation,
+      ...ourSearchPageTranslation,
+    };
+  };
+
   return {
     locale,
-    messages: (await import(`../translations/${locale}/general.json`),
-    await import(`../translations/${locale}/landing-page.json`)).default,
+    messages: await translations(),
   };
 });

@@ -4,9 +4,11 @@ export const style = ({
   size,
   variant,
   disabled,
+  noHoverEffect,
 }: {
   size: Size;
   variant: Variant;
+  noHoverEffect: boolean;
   disabled: boolean;
 }): string => {
   const classes: string[] = [` flex items-center gap-x-1`];
@@ -42,22 +44,32 @@ export const style = ({
       break;
   }
 
-  const variantDefault =
-    "text-black bg-white border-white hover:text-white hover:bg-transparent border-1 border-solid";
+  const hover = noHoverEffect ? "" : "hover:text-white hover:bg-transparent";
+
+  const variantDefault = `text-black bg-white border-white ${hover} border-1 border-solid`;
+
   switch (variant) {
     case "primary":
       classes.push(variantDefault);
       break;
 
     case "alt":
+      const hoverAlt = noHoverEffect
+        ? ""
+        : "hover:border-black hover:text-white hover:bg-black";
+
       classes.push(
-        "text-white bg-transprent border-white hover:border-black hover:text-white hover:bg-black border-1 border-solid"
+        `text-white bg-transprent border-white ${hoverAlt} border-1 border-solid`
       );
       break;
 
     case "secondary":
+      const hoverSecondary = noHoverEffect
+        ? ""
+        : "hover:border-white hover:text-white hover:bg-transparent";
+
       classes.push(
-        "text-white bg-black border-black hover:border-white hover:text-white hover:bg-transparent border-1 border-solid"
+        `text-white bg-black border-black ${hoverSecondary} border-1 border-solid`
       );
       break;
 

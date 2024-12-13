@@ -6,7 +6,6 @@ export interface ArrowProps extends React.SVGProps<SVGSVGElement> {
 }
 
 const Arrow = ({ onClick, type, ...rest }: ArrowProps) => {
-  console.log(type);
   const direction = () => {
     switch (type) {
       case "UP":

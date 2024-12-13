@@ -4,10 +4,14 @@
       "title": "Sećanje i Poštovanje za Vaše Voljene",
       "subtitle": "Kreirajte personalizovane profile i delite drage uspomene bez napora.",
       "alt": "Groblje u sumrak sa upaljenim svećama i ružama postavljenim na grobovima, simbolizujući sećanje i počast.",
-      "button": "Zabelezi uspomenu"
+      "button": "Zabelezi uspomenu",
+      "button2": "Saznaj više",
+      "plh": "Pretraži profile"
     },
     "applicationDetails": {
       "title": "Kako Funkcioniše:",
+      "text": "Saznajte kako QR kodovi na spomenicima omogućavaju očuvanje uspomena na preminule. Ovaj vodič pokriva sve što treba da znate o kreiranju digitalnog memorijala koji može prikazati biografije, slike i druge informacije.",
+
       "info[0]": {
         "title": "1. Kreirajte Profil",
         "text": "Postavite digitalni memorijal sa ličnim podacima, fotografijama i pričama."
@@ -19,7 +23,8 @@
       "info[2]": {
         "title": "3. Delite i Sećajte se",
         "text": "Podelite memorijal sa porodicom i prijateljima i prikupite počasti na jednom mestu."
-      }
+      },
+      "btn": "Vidi vodič >"
     },
     "functionality": {
       "title": "Pregled Funkcionalnosti:",
@@ -51,7 +56,6 @@
       "btn1": "Zabelezi uspomenu",
       "btn2": "Istraži profile"
     },
-
     "faq": {
       "title": "Često postavljana pitanja",
       "info[0]": {
@@ -73,6 +77,18 @@
       "info[4]": {
         "title": "Okupljanja",
         "text": "Svima koji su odali pocasti ce stizati mejl podsetnici na okupljanje."
+      }
+    },
+    "contact-us": {
+      "title": "Kontaktirajte nas",
+      "btn": "Posalji",
+      "fields": {
+        "name": "Ime i Prezime",
+        "namePlh": "Unesi ime i prezime",
+        "email": "Email",
+        "emailPlh": "Unesi email",
+        "message": "Vaša poruka",
+        "messagePlh": "Posalji nam poruku"
       }
     },
     "ratings": {
@@ -112,6 +128,13 @@
         "img": "",
         "alt": ""
       }
+    },
+    "footer": {
+      "about-us": "Naš Vodič",
+      "privacy-policy": " Politika Privatnosti",
+      "contact": "Kontakt",
+      "term-of-use": "Uslovi Korišćenja",
+      "copy": "Copyright informacije"
     }
   }
 }
