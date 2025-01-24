@@ -1,6 +1,6 @@
 import { Heading, SwiperContainer } from "@/components/core";
 import { generateArrayOfLen } from "@/utils/array";
-import SingleRating from "@/modules/landing-page/ratings/partials/SingleRating";
+// import SingleRating from "@/modules/landing-page/ratings/partials/SingleRating";
 import person1 from "@/app/assets/landing/slider/person-1.png";
 import person2 from "@/app/assets/landing/slider/person-2.png";
 import person3 from "@/app/assets/landing/slider/person-3.png";
@@ -31,7 +31,7 @@ const RatingSwiper = () => {
         className="text-center"
       />
       <SwiperContainer>
-        {infos.map((el, index) => (
+        {/* {infos.map((el, index) => (
           <SingleRating
             text={t(TranslationsEnums.LANDING_PAGE, `ratings.info[${el}].text`)}
             lastName={t(
@@ -46,7 +46,7 @@ const RatingSwiper = () => {
             alt={t(TranslationsEnums.LANDING_PAGE, `ratings.info[${el}].alt`)}
             key={el}
           />
-        ))}
+        ))} */}
       </SwiperContainer>
     </section>
   );
