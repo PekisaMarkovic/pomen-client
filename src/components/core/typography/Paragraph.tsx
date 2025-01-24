@@ -5,10 +5,12 @@ import {
   FontWeight,
   Spacing,
 } from "@/interfaces/general";
+import { fontSizes } from "@/utils/style/font-sizes";
+import { fontWeights } from "@/utils/style/font-weights";
+import { spacing } from "@/utils/style/spacings";
+import { formatText } from "@/utils/style/format-text";
+import { textColor } from "@/utils/style/text-color";
 import { MouseEventHandler, ReactNode } from "react";
-import { fontWeights } from "./style/font-weights";
-import { fontSizes } from "./style/font-sizes";
-import { textColor } from "./style/text-color";
 
 type Props = {
   leftIcon?: ReactNode;
@@ -18,6 +20,7 @@ type Props = {
   size?: FontSize;
   color?: Color;
   noWrap?: boolean;
+  preWrap?: boolean;
   handleOnClick?: MouseEventHandler<HTMLDivElement>;
   weight?: FontWeight;
   isRequired?: boolean;
@@ -45,6 +48,7 @@ const Paragraph = ({
   size = "xs",
   color = "white",
   noWrap,
+  preWrap,
   handleOnClick,
   weight = "normal",
   isRequired = false,
@@ -52,13 +56,12 @@ const Paragraph = ({
   pr,
   textTransform,
 }: Props) => {
-  const paddingLeft = pl ? `pl-${pl}` : "";
-  const paddingRight = pr ? `pr-${pr}` : "";
-  const txtTransform = textTransform || "";
-
   return (
     <div
-      className={`flex gap-x-3 items-center overflow-hidden ${paddingLeft} ${paddingRight}`}
+      className={`flex gap-x-3 items-center overflow-hidden ${spacing(
+        "padding",
+        { l: pl, r: pr }
+      )}`}
       onClick={handleOnClick}
     >
       {leftIcon}
@@ -66,7 +69,11 @@ const Paragraph = ({
       <p
         className={`font-${fontFamily} ${fontSizes(size)} ${textColor(color)} ${
           className || ""
-        } ${fontWeights(weight)} ${noWrap ? "truncate" : ""} ${txtTransform}`}
+        } ${fontWeights(weight)} ${formatText({
+          noWrap,
+          preWrap,
+          textTransform,
+        })}`}
       >
         {text}
         {isRequired && <span className="text-red">*</span>}

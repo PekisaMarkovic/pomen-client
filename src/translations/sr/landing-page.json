@@ -97,36 +97,31 @@
         "firstName": "Darko",
         "lastName": "Dakic",
         "text": "Kreirajte profile sa detaljnim informacijama, fotografijama i počastima.",
-        "img": "",
-        "alt": ""
+        "alt": "Darko Dakic, kreirajte profile sa detaljnim informacijama, fotografijama i počastima."
       },
       "info[1]": {
-        "firstName": "Darko",
-        "lastName": "Dakic",
+        "firstName": "Veljko",
+        "lastName": "Simic",
         "text": "Povežite profile sa fizičkim ili digitalnim QR kodovima za lak pristup.",
-        "img": "",
-        "alt": ""
+        "alt": "Veljko Simic, povežite profile sa fizičkim ili digitalnim QR kodovima za lak pristup."
       },
       "info[2]": {
-        "firstName": "Darko",
-        "lastName": "Dakic",
+        "firstName": "Stasa",
+        "lastName": "Maric",
         "text": "Pronađite i navigirajte tačnu lokaciju grobnog mesta unutar groblja.",
-        "img": "",
-        "alt": ""
+        "alt": "Stasa Maric, pronađite i navigirajte tačnu lokaciju grobnog mesta unutar groblja."
       },
       "info[3]": {
-        "firstName": "Darko",
-        "lastName": "Dakic",
+        "firstName": "Ozren",
+        "lastName": "Cik",
         "text": "Dozvolite prijateljima i porodici da ostave poruke, cveće ili virtuelne sveće.",
-        "img": "",
-        "alt": ""
+        "alt": "Cik Ozren, ozvolite prijateljima i porodici da ostave poruke, cveće ili virtuelne sveće."
       },
       "info[4]": {
-        "firstName": "Darko",
-        "lastName": "Dakic",
+        "firstName": "Olivera",
+        "lastName": "Elez",
         "text": "Svima koji su odali pocasti ce stizati mejl podsetnici na okupljanje.",
-        "img": "",
-        "alt": ""
+        "alt": "Olivera Elez, Svima koji su odali pocasti ce stizati mejl podsetnici na okupljanje."
       }
     },
     "footer": {

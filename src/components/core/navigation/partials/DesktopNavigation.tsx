@@ -1,21 +1,29 @@
 import { NAVIGATION_LINKS } from "@/components/constants/navigation";
 import NavigationLink from "@/components/core/navigation/partials/Links/NavigationLink";
-import { useTranslations } from "next-intl";
 import Logo from "@/app/icons/Logo";
-
-const translationResource = "g";
+import Link from "next/link";
+import ROUTES from "@/components/constants/a-routes";
+import useCustomTranslation from "@/hooks/use-custom-translation";
+import { TranslationsEnums } from "@/i18n/request";
 
 const DesktopNavigation = () => {
-  const t = useTranslations(translationResource);
+  const { t } = useCustomTranslation();
 
   return (
     <div className="hidden xl:flex justify-between bg-white py-4 px-6">
       <div className="col-span-4">
-        <Logo type="DARK" />
+        <Link href={ROUTES.INDEX}>
+          <Logo type="DARK" />
+        </Link>
       </div>
       <div className="w-1/2 grid grid-cols-4 gap-x-8 items-center">
-        {NAVIGATION_LINKS.map(({ href, text }) => (
-          <NavigationLink text={t(text)} href={href} align="RIGHT" />
+        {NAVIGATION_LINKS.map(({ href, text }, i) => (
+          <NavigationLink
+            text={t(TranslationsEnums.GENERAL, text)}
+            href={href}
+            align="RIGHT"
+            key={i}
+          />
         ))}
       </div>
     </div>

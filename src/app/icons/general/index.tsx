@@ -7,6 +7,7 @@ import CheckIcon from "@/app/icons/general/CheckIcon";
 import UnCheckIcon from "@/app/icons/general/UnCheckIcon";
 import XIcon from "@/app/icons/general/XIcon";
 import UserPlaceholder from "@/app/icons/general/UserPlaceholder";
+import CertificateUser from "@/app/icons/general/CertificateUser";
 
 export {
   CrossIcon,
@@ -16,6 +17,7 @@ export {
   FacebookIcon,
   CheckIcon,
   UnCheckIcon,
+  CertificateUser,
   XIcon,
   UserPlaceholder,
 };

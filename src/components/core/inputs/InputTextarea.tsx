@@ -2,9 +2,8 @@ import get from "lodash.get";
 import { Label, ErrorMessage } from "@/components/core";
 import { useFormContext, useWatch } from "react-hook-form";
 import { ChangeEventHandler } from "react";
-import { useTranslations } from "next-intl";
-
-const translationResource = "g";
+import useCustomTranslation from "@/hooks/use-custom-translation";
+import { TranslationsEnums } from "@/i18n/request";
 
 type Props = {
   placeholder?: string;
@@ -27,7 +26,7 @@ const InputTextarea = ({
   maxChar,
   isDisabled,
 }: Props) => {
-  const t = useTranslations(translationResource);
+  const { t } = useCustomTranslation();
   const value = useWatch({ name }) as string;
   const charsInString = value?.length || 0;
   const {
@@ -41,7 +40,9 @@ const InputTextarea = ({
   const error =
     errorObj && errorObj.message ? (errorObj.message as string) : null;
   const maxCharError =
-    maxChar && charsInString > maxChar ? t("fields.maxCharError") : undefined;
+    maxChar && charsInString > maxChar
+      ? t(TranslationsEnums.GENERAL, "fields.maxCharError")
+      : undefined;
 
   const handleInputChange: ChangeEventHandler<HTMLTextAreaElement> = (e) => {
     if (isDisabled) return;
@@ -72,9 +73,8 @@ const InputTextarea = ({
               maxCharError && "text-red"
             }`}
           >
-            {t("fields.maxChar", {
-              numberOfChars: `${maxChar - charsInString}`,
-            })}
+            {t(TranslationsEnums.GENERAL, "fields.maxChar")}{" "}
+            {maxChar - charsInString}
           </span>
         )}
       </div>

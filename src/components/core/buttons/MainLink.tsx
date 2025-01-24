@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import { Size, Variant } from "./MainButton";
-import { style } from "./style";
+import { Size, Variant } from "@/components/core/buttons/MainButton";
+import { style } from "@/components/core/buttons/style";
 import Link from "next/link";
 
 type Props = {

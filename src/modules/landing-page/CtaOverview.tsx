@@ -1,10 +1,9 @@
 import { Heading, MainLink, Paragraph } from "@/components/core";
-import { useTranslations } from "next-intl";
-
-const translationResource = "landing";
+import useCustomTranslation from "@/hooks/use-custom-translation";
+import { TranslationsEnums } from "@/i18n/request";
 
 const CtaOverview = () => {
-  const t = useTranslations(translationResource);
+  const { t } = useCustomTranslation();
 
   return (
     <section
@@ -15,7 +14,7 @@ const CtaOverview = () => {
         <div className="flex flex-col gap-y-2.5 items-center">
           <Heading
             id="cta-title"
-            text={t("cta.title")}
+            text={t(TranslationsEnums.LANDING_PAGE, "cta.title")}
             variant="3"
             size="2xl"
             color="white"
@@ -24,7 +23,7 @@ const CtaOverview = () => {
           />
 
           <Paragraph
-            text={t("cta.subtitle")}
+            text={t(TranslationsEnums.LANDING_PAGE, "cta.subtitle")}
             weight="light"
             size="base"
             color="white"
@@ -35,14 +34,14 @@ const CtaOverview = () => {
         <div className="flex flex-col md:flex-row gap-2.5">
           <MainLink
             href="#"
-            text={t("cta.btn1")}
+            text={t(TranslationsEnums.LANDING_PAGE, "cta.btn1")}
             variant="primary"
             size="full"
           />
 
           <MainLink
             href="#"
-            text={t("cta.btn2")}
+            text={t(TranslationsEnums.LANDING_PAGE, "cta.btn2")}
             variant="secondary"
             size="full"
           />

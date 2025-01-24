@@ -5,6 +5,7 @@ import get from "lodash.get";
 import { ChangeEventHandler } from "react";
 import { Spacing } from "@/interfaces/general";
 import { inputTextStyle } from "@/components/core/inputs/InputTextStyle";
+import { spacing } from "@/utils/style/spacings";
 
 export type InputVaraint = "default" | "simple";
 
@@ -38,15 +39,6 @@ const InputText = ({
   mt,
   errorMessageType = "input",
 }: Props) => {
-  let marginTop = "";
-  let marginBottom = "";
-
-  if (mt) {
-    marginTop = `mt-${mt}`;
-  }
-  if (mb) {
-    marginBottom = `mt-${mb}`;
-  }
   const {
     register,
     formState: { errors },
@@ -66,7 +58,12 @@ const InputText = ({
   };
 
   return (
-    <div className={`flex flex-col relative ${marginTop} ${marginBottom}`}>
+    <div
+      className={`flex flex-col relative ${spacing("margin", {
+        t: mt,
+        b: mb,
+      })}`}
+    >
       {variant === "default" && label && (
         <Label htmlFor={name} label={label} isRequired={isRequired} />
       )}

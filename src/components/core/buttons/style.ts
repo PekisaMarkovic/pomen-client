@@ -1,4 +1,4 @@
-import { Size, Variant } from "./MainButton";
+import { Size, Variant } from "@/components/core/buttons/MainButton";
 
 export const style = ({
   size,

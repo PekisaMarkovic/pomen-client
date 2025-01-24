@@ -1,14 +1,13 @@
 import heroBg from "@/app/assets/landing/hero-bg.webp";
 import Logo from "@/app/icons/Logo";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import HeroSearch from "@/modules/landing-page/hero-section/partials/HeroSearch";
 import { Heading, MainLink, Paragraph } from "@/components/core";
-
-const translationResource = "landing";
+import useCustomTranslation from "@/hooks/use-custom-translation";
+import { TranslationsEnums } from "@/i18n/request";
 
 const HeroSection = () => {
-  const t = useTranslations(translationResource);
+  const { t } = useCustomTranslation();
 
   return (
     <section
@@ -21,7 +20,7 @@ const HeroSection = () => {
         <div className="my-7 flex flex-col gap-y-3.5 items-center">
           <Heading
             id="hero-heading"
-            text={t("hero.title")}
+            text={t(TranslationsEnums.LANDING_PAGE, "hero.title")}
             variant="1"
             size="2xl"
             color="white"
@@ -30,7 +29,7 @@ const HeroSection = () => {
           />
 
           <Paragraph
-            text={t("hero.subtitle")}
+            text={t(TranslationsEnums.LANDING_PAGE, "hero.subtitle")}
             weight="light"
             size="base"
             className="text-center"
@@ -42,14 +41,14 @@ const HeroSection = () => {
         <div className="w-full flex flex-col md:flex-row gap-4">
           <MainLink
             href="#"
-            text={t("hero.button")}
+            text={t(TranslationsEnums.LANDING_PAGE, "hero.button")}
             variant="primary"
             size="full"
           />
 
           <MainLink
             href="#"
-            text={t("hero.button2")}
+            text={t(TranslationsEnums.LANDING_PAGE, "hero.button2")}
             variant="alt"
             size="full"
           />
@@ -60,7 +59,7 @@ const HeroSection = () => {
         width={1360}
         height={768}
         src={heroBg}
-        alt={t("hero.alt")}
+        alt={t(TranslationsEnums.LANDING_PAGE, "hero.text")}
       />
     </section>
   );

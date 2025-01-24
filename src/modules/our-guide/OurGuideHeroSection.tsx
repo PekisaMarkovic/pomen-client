@@ -1,13 +1,12 @@
 import heroBg from "@/app/assets/landing/hero-bg.webp";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Logo from "@/app/icons/Logo";
 import { Paragraph } from "@/components/core";
-
-const translationResource = "our-guide";
+import useCustomTranslation from "@/hooks/use-custom-translation";
+import { TranslationsEnums } from "@/i18n/request";
 
 const OurGuideHeroSection = () => {
-  const t = useTranslations(translationResource);
+  const { t } = useCustomTranslation();
 
   return (
     <section
@@ -19,14 +18,18 @@ const OurGuideHeroSection = () => {
           <Logo type="WHITE" />
         </div>
 
-        <Paragraph text={t("hero.text")} weight="light" size="base" />
+        <Paragraph
+          text={t(TranslationsEnums.OUR_GUIDE, "hero.text")}
+          weight="light"
+          size="base"
+        />
       </div>
       <Image
         className="absolute -z-1 inset-0 w-full h-full object-cover"
         width={1360}
         height={768}
         src={heroBg}
-        alt={t("hero.alt")}
+        alt={t(TranslationsEnums.OUR_GUIDE, "hero.text")}
       />
     </section>
   );

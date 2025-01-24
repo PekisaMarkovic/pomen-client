@@ -1,12 +1,11 @@
 import { Heading } from "@/components/core";
-import { useTranslations } from "next-intl";
+import useCustomTranslation from "@/hooks/use-custom-translation";
+import { TranslationsEnums } from "@/i18n/request";
 import SingleFAQ from "@/modules/landing-page/faq/partials/SingleFAQ";
 import { generateArrayOfLen } from "@/utils/array";
 
-const translationResource = "landing";
-
 const FAQ = () => {
-  const t = useTranslations(translationResource);
+  const { t } = useCustomTranslation();
 
   const infos = generateArrayOfLen(5);
 
@@ -15,7 +14,7 @@ const FAQ = () => {
       <div className="px-6 py-8 flex flex-col gap-y-6 w-full md:w-9/12 lg:w-6/12">
         <Heading
           id="faq-title"
-          text={t("faq.title")}
+          text={t(TranslationsEnums.LANDING_PAGE, "faq.title")}
           variant="3"
           size="2xl"
           color="black"
@@ -26,8 +25,8 @@ const FAQ = () => {
         <div className="flex flex-col gap-y-2.5">
           {infos.map((el) => (
             <SingleFAQ
-              text={t(`faq.info[${el}].text`)}
-              title={t(`faq.info[${el}].title`)}
+              text={t(TranslationsEnums.LANDING_PAGE, `faq.info[${el}].text`)}
+              title={t(TranslationsEnums.LANDING_PAGE, `faq.info[${el}].title`)}
               key={el}
             />
           ))}

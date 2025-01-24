@@ -4,16 +4,25 @@ import { Arrow } from "@/app/icons/general";
 import { PropsWithChildren } from "react";
 import Slider from "react-slick";
 
-const SwiperContainer = ({ children }: PropsWithChildren) => {
+type Props = {
+  speed?: number;
+  autoplaySpeed?: number;
+};
+
+const SwiperContainer = ({
+  children,
+  speed = 500,
+  autoplaySpeed = 3000,
+}: PropsWithChildren<Props>) => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed,
     slidesToShow: 3,
     slidesToScroll: 3,
 
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed,
     cssEase: "linear",
     responsive: [
       {

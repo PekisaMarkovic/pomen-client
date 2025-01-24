@@ -14,6 +14,8 @@ const config: Config = {
         white: "var(--white)",
         overlay: "var(--overlay)",
         grey: "var(--grey)",
+        "dark-grey": "var(--dark-grey)",
+        "medium-grey": "var(--medium-grey)",
         "light-grey": "var(--light-grey)",
         "hover-grey": "var(--hover-grey)",
         "overlay-dark": "var(--overlay-dark)",

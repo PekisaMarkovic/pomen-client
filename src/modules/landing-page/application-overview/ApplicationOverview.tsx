@@ -1,13 +1,12 @@
-import { generateArrayOfLen } from "@/utils/array";
-import { useTranslations } from "next-intl";
-import SingleDetail from "@/modules/landing-page/application-overview/SingleDetail";
-import { NavigationLink, Paragraph, Heading } from "@/components/core";
 import ROUTES from "@/components/constants/a-routes";
-
-const translationResource = "landing";
+import { Heading, NavigationLink, Paragraph } from "@/components/core";
+import useCustomTranslation from "@/hooks/use-custom-translation";
+import { TranslationsEnums } from "@/i18n/request";
+import SingleDetail from "@/modules/landing-page/application-overview/SingleDetail";
+import { generateArrayOfLen } from "@/utils/array";
 
 const ApplicationOverview = () => {
-  const t = useTranslations(translationResource);
+  const { t } = useCustomTranslation();
 
   const infos = generateArrayOfLen(3);
 
@@ -20,7 +19,7 @@ const ApplicationOverview = () => {
         <div>
           <Heading
             id="application-details-title"
-            text={t("applicationDetails.title")}
+            text={t(TranslationsEnums.LANDING_PAGE, "applicationDetails.title")}
             variant="2"
             size="2xl"
             color="black"
@@ -29,7 +28,7 @@ const ApplicationOverview = () => {
           />
 
           <Paragraph
-            text={t("applicationDetails.text")}
+            text={t(TranslationsEnums.LANDING_PAGE, "applicationDetails.text")}
             color="black"
             size="base"
             className="mt-2"
@@ -37,15 +36,21 @@ const ApplicationOverview = () => {
 
           <NavigationLink
             href={ROUTES.OUR_GUIDE}
-            text={t("applicationDetails.btn")}
+            text={t(TranslationsEnums.LANDING_PAGE, "applicationDetails.btn")}
           />
         </div>
 
         <div className="grid grid-cols-1 gap-y-6">
           {infos.map((el) => (
             <SingleDetail
-              text={t(`applicationDetails.info[${el}].text`)}
-              title={t(`applicationDetails.info[${el}].title`)}
+              text={t(
+                TranslationsEnums.LANDING_PAGE,
+                `applicationDetails.info[${el}].text`
+              )}
+              title={t(
+                TranslationsEnums.LANDING_PAGE,
+                `applicationDetails.info[${el}].title`
+              )}
               key={el}
             />
           ))}

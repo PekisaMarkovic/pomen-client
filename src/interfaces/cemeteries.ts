@@ -1,5 +1,8 @@
 import { File } from "@/interfaces/file";
+import { LocationPoint } from "@/interfaces/general";
 import { Cemetery } from "@/interfaces/cementery";
+import { Gethering } from "@/interfaces/gethering";
+import { Tribute } from "@/interfaces/tribute";
 
 export interface Certificate {
   certificateId: number;
@@ -12,18 +15,15 @@ export interface Certificate {
   placeOfDeath: string;
   timeOfDeath: number;
   biography: string;
-  location: { x: number; y: number };
+  location: LocationPoint;
   createdAt: Date;
   updatedAt: Date;
   deletedAt: Date;
   cemeteryId: number;
   cemetery: Cemetery;
   userId: number;
-  //   user: User;
-  //   getherings: Gethering[];
-  //   tributes: Tribute[];
-  //   qrcode: Qrcode;
-  //   orders: Order[];
+  getherings: Gethering[];
+  tributes: Tribute[];
   certificateProfileId: number;
   profileImage: File;
   files: File[];

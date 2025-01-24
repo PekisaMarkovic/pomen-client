@@ -13,3 +13,10 @@ export enum FileTypeEnum {
   VIDEO = "video",
   DOCUMENT = "document",
 }
+
+export interface CertificateFiles {
+  profile: File;
+  images: File[];
+  videos: File[];
+  document: File[];
+}

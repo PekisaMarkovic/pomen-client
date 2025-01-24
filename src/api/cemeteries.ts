@@ -1,5 +1,7 @@
 import { DropdownCementeryDto } from "@/interfaces/cementery";
 import { apiForServerSide } from "@/api/axios";
+import { redirect } from "next/navigation";
+import ROUTES from "@/components/constants/a-routes";
 
 const RESOURCE_URL = "cemeteries";
 
@@ -10,6 +12,6 @@ export const getCemeteriesOptions = async () => {
     );
     return data;
   } catch (e) {
-    return Promise.reject(e);
+    return redirect(ROUTES.ERROR);
   }
 };

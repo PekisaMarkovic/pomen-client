@@ -1,4 +1,4 @@
-import ROUTES from "./a-routes";
+import ROUTES from "@/components/constants/a-routes";
 
 export const NAVIGATION_LINKS = [
   {
@@ -10,8 +10,8 @@ export const NAVIGATION_LINKS = [
     href: ROUTES.OUR_GUIDE,
   },
   {
-    text: "navigation.search",
-    href: ROUTES.SEARCH,
+    text: "navigation.contact",
+    href: `${ROUTES.INDEX}/#contact`,
   },
   {
     text: "navigation.profile",

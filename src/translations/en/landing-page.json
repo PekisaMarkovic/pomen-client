@@ -4,11 +4,14 @@
       "title": "Sećanje i Poštovanje za Vaše Voljene",
       "subtitle": "Kreirajte personalizovane profile i delite drage uspomene bez napora.",
       "alt": "Groblje u sumrak sa upaljenim svećama i ružama postavljenim na grobovima, simbolizujući sećanje i počast.",
-      "button": "Zabelezi uspomenu"
+      "button": "Zabelezi uspomenu",
+      "button2": "Saznaj više",
+      "plh": "Pretraži profile"
     },
     "applicationDetails": {
       "title": "Kako Funkcioniše:",
       "text": "Saznajte kako QR kodovi na spomenicima omogućavaju očuvanje uspomena na preminule. Ovaj vodič pokriva sve što treba da znate o kreiranju digitalnog memorijala koji može prikazati biografije, slike i druge informacije.",
+
       "info[0]": {
         "title": "1. Kreirajte Profil",
         "text": "Postavite digitalni memorijal sa ličnim podacima, fotografijama i pričama."
@@ -20,7 +23,113 @@
       "info[2]": {
         "title": "3. Delite i Sećajte se",
         "text": "Podelite memorijal sa porodicom i prijateljima i prikupite počasti na jednom mestu."
+      },
+      "btn": "Vidi vodič >"
+    },
+    "functionality": {
+      "title": "Pregled Funkcionalnosti:",
+      "alt": "Ruke koje drže mali buket belih cvetova",
+      "info[0]": {
+        "title": "Personalizovani Memorijali",
+        "text": "Kreirajte profile sa detaljnim informacijama, fotografijama i počastima."
+      },
+      "info[1]": {
+        "title": "Integracija sa QR Kodom",
+        "text": "Povežite profile sa fizičkim ili digitalnim QR kodovima za lak pristup."
+      },
+      "info[2]": {
+        "title": "Interaktivne Mape",
+        "text": "Pronađite i navigirajte tačnu lokaciju grobnog mesta unutar groblja."
+      },
+      "info[3]": {
+        "title": "Zid Počasti",
+        "text": "Dozvolite prijateljima i porodici da ostave poruke, cveće ili virtuelne sveće."
+      },
+      "info[4]": {
+        "title": "Okupljanja",
+        "text": "Svima koji su odali pocasti ce stizati mejl podsetnici na okupljanje."
       }
+    },
+    "cta": {
+      "title": "Započnite Čuvanje uspomena Danas",
+      "subtitle": "Pridružite se drugima koji kreiraju lepe memorijale i čuvaju uspomene",
+      "btn1": "Zabelezi uspomenu",
+      "btn2": "Istraži profile"
+    },
+    "faq": {
+      "title": "Često postavljana pitanja",
+      "info[0]": {
+        "title": "Personalizovani Memorijali",
+        "text": "Kreirajte profile sa detaljnim informacijama, fotografijama i počastima."
+      },
+      "info[1]": {
+        "title": "Integracija sa QR Kodom",
+        "text": "Povežite profile sa fizičkim ili digitalnim QR kodovima za lak pristup."
+      },
+      "info[2]": {
+        "title": "Interaktivne Mape",
+        "text": "Pronađite i navigirajte tačnu lokaciju grobnog mesta unutar groblja."
+      },
+      "info[3]": {
+        "title": "Zid Počasti",
+        "text": "Dozvolite prijateljima i porodici da ostave poruke, cveće ili virtuelne sveće."
+      },
+      "info[4]": {
+        "title": "Okupljanja",
+        "text": "Svima koji su odali pocasti ce stizati mejl podsetnici na okupljanje."
+      }
+    },
+    "contact-us": {
+      "title": "Kontaktirajte nas",
+      "btn": "Posalji",
+      "fields": {
+        "name": "Ime i Prezime",
+        "namePlh": "Unesi ime i prezime",
+        "email": "Email",
+        "emailPlh": "Unesi email",
+        "message": "Vaša poruka",
+        "messagePlh": "Posalji nam poruku"
+      }
+    },
+    "ratings": {
+      "title": "Šta naši korisnici kažu",
+      "info[0]": {
+        "firstName": "Darko",
+        "lastName": "Dakic",
+        "text": "Kreirajte profile sa detaljnim informacijama, fotografijama i počastima.",
+        "alt": "Darko Dakic, kreirajte profile sa detaljnim informacijama, fotografijama i počastima."
+      },
+      "info[1]": {
+        "firstName": "Veljko",
+        "lastName": "Simic",
+        "text": "Povežite profile sa fizičkim ili digitalnim QR kodovima za lak pristup.",
+        "alt": "Veljko Simic, povežite profile sa fizičkim ili digitalnim QR kodovima za lak pristup."
+      },
+      "info[2]": {
+        "firstName": "Stasa",
+        "lastName": "Maric",
+        "text": "Pronađite i navigirajte tačnu lokaciju grobnog mesta unutar groblja.",
+        "alt": "Stasa Maric, pronađite i navigirajte tačnu lokaciju grobnog mesta unutar groblja."
+      },
+      "info[3]": {
+        "firstName": "Ozren",
+        "lastName": "Cik",
+        "text": "Dozvolite prijateljima i porodici da ostave poruke, cveće ili virtuelne sveće.",
+        "alt": "Cik Ozren, ozvolite prijateljima i porodici da ostave poruke, cveće ili virtuelne sveće."
+      },
+      "info[4]": {
+        "firstName": "Olivera",
+        "lastName": "Elez",
+        "text": "Svima koji su odali pocasti ce stizati mejl podsetnici na okupljanje.",
+        "alt": "Olivera Elez, Svima koji su odali pocasti ce stizati mejl podsetnici na okupljanje."
+      }
+    },
+    "footer": {
+      "about-us": "Naš Vodič",
+      "privacy-policy": " Politika Privatnosti",
+      "contact": "Kontakt",
+      "term-of-use": "Uslovi Korišćenja",
+      "copy": "Copyright informacije"
     }
   }
 }

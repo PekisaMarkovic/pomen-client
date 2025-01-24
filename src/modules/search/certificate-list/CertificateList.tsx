@@ -1,24 +1,27 @@
 import { Certificate } from "@/interfaces/cemeteries";
 import CertificateCard from "@/modules/search/certificate-list/partials/CertificateCard";
 import { Heading } from "@/components/core";
-import { useTranslations } from "next-intl";
 import { DropdownCityDto } from "@/interfaces/cities";
+import useCustomTranslation from "@/hooks/use-custom-translation";
+import { TranslationsEnums } from "@/i18n/request";
 
 type Props = {
   citiesOptions: DropdownCityDto[];
   certificates: Certificate[];
   total: number;
 };
-const translationResource = "search";
 
 const CertificateList = ({ certificates, total, citiesOptions }: Props) => {
-  const t = useTranslations(translationResource);
+  const { t } = useCustomTranslation();
 
   return (
     <section aria-labelledby="people-list" className="px-4 mt-6">
       <Heading
         id="cta-title"
-        text={`${total} ${t("filters.resultsForSearch")}`}
+        text={`${total} ${t(
+          TranslationsEnums.SEARCH,
+          "filters.resultsForSearch"
+        )}`}
         variant="1"
         size="3xl"
         color="black"

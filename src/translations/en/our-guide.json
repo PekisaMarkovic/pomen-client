@@ -34,8 +34,8 @@
       },
 
       "main": {
-        "title": "Odaberite platformu za izradu memorijala",
-        "text": "Pomen je specijalizovana platforma za kreiranje QR kodova koji vode ka digitalnim profilima preminulih osoba, pružajući sve neophodne opcije za očuvanje uspomena.",
+        "title": "Prikupite sve važne informacije",
+        "text": "Da biste kreirali kvalitetan memorijal, važno je prikupiti sledeće informacije:",
 
         "list[0]": {
           "title": "Biografski podaci:",

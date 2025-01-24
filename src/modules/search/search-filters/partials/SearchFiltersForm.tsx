@@ -6,7 +6,12 @@ import { SelectOption } from "@/interfaces/general";
 import { debounce } from "@/utils/debounce";
 import { useSearchParams, useRouter } from "next/navigation";
 import { PropsWithChildren, useEffect, useCallback } from "react";
-import { FormProvider, useForm, useWatch } from "react-hook-form";
+import {
+  FormProvider,
+  useForm,
+  useFormContext,
+  useWatch,
+} from "react-hook-form";
 import {
   checkCityInitValue,
   checkCemeteryInitValue,
@@ -35,7 +40,6 @@ const SearchFiltersForm = ({
       ),
     },
   });
-
   const { control } = methods;
 
   const values = useWatch({ control });

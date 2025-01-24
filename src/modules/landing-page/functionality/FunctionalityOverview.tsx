@@ -1,14 +1,13 @@
 import functinalityBg from "@/app/assets/landing/hands-and-flowers.webp";
 import { Heading } from "@/components/core";
 import { generateArrayOfLen } from "@/utils/array";
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import SingleFunctionality from "@/modules/landing-page/functionality/partials/SingleFunctionality";
-
-const translationResource = "landing";
+import useCustomTranslation from "@/hooks/use-custom-translation";
+import { TranslationsEnums } from "@/i18n/request";
 
 const FunctionalityOverview = () => {
-  const t = useTranslations(translationResource);
+  const { t } = useCustomTranslation();
 
   const infos = generateArrayOfLen(5);
 
@@ -24,12 +23,12 @@ const FunctionalityOverview = () => {
         width={4096}
         height={2734}
         src={functinalityBg}
-        alt={t("functionality.alt")}
+        alt={t(TranslationsEnums.LANDING_PAGE, "functionality.alt")}
       />
       <div className="p-6 flex flex-col gap-y-6 md:w-9/12 lg:w-6/12">
         <Heading
           id="application-details-title"
-          text={t("functionality.title")}
+          text={t(TranslationsEnums.LANDING_PAGE, "functionality.title")}
           variant="3"
           size="2xl"
           color="white"
@@ -40,8 +39,14 @@ const FunctionalityOverview = () => {
         <div className="flex flex-col md:grid md:grid-cols-2  xl:grid-cols-3 gap-6 mt-5">
           {infos.map((el) => (
             <SingleFunctionality
-              text={t(`functionality.info[${el}].text`)}
-              title={t(`functionality.info[${el}].title`)}
+              text={t(
+                TranslationsEnums.LANDING_PAGE,
+                `functionality.info[${el}].text`
+              )}
+              title={t(
+                TranslationsEnums.LANDING_PAGE,
+                `functionality.info[${el}].title`
+              )}
               key={el}
             />
           ))}

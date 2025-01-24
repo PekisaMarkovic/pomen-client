@@ -1,4 +1,5 @@
-import { useTranslation } from "react-i18next";
+import useCustomTranslation from "@/hooks/use-custom-translation";
+import { TranslationsEnums } from "@/i18n/request";
 
 export type Variant = "input" | "select" | "upload" | "custom";
 
@@ -8,7 +9,7 @@ type Props = {
   variant?: Variant;
 };
 const ErrorMessage = ({ name, variant, message }: Props) => {
-  const { t } = useTranslation(["er"]);
+  const { t } = useCustomTranslation();
 
   if (message)
     return <span className="font-montserrat text-sm text-red">{message}</span>;
@@ -17,7 +18,8 @@ const ErrorMessage = ({ name, variant, message }: Props) => {
     <>
       {name && (
         <span className="font-montserrat text-sm text-red">
-          {t(`er:${variant}`, { field: t(`er:fields.${name}`) })}
+          {t(TranslationsEnums.ERROR, `${variant}`)}
+          {t(TranslationsEnums.ERROR, `fields.${name}`)}
         </span>
       )}
     </>

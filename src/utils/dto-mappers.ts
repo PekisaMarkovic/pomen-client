@@ -37,3 +37,12 @@ export function mapCemeteryOptionsToSelectOptins(
 ): SelectOption[] {
   return array.map(mapSingleCemeteryOptionsToSelectOptins);
 }
+
+export function filterCemeteryOptionsByCityId(
+  array: DropdownCementeryDto[],
+  id?: number | string
+): DropdownCementeryDto[] {
+  if (id) return array.filter((obj) => obj.cityId === Number(id));
+
+  return array;
+}

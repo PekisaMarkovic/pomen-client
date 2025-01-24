@@ -1,0 +1,20 @@
+{
+  "certificate": {
+    "person-info": {
+      "place": "POČIVA NA GROBLJU",
+      "placeOfBirth": "MESTO RODJENJA",
+      "placeOfDeath": "DATUM SMRTI",
+      "dateOfBirth": "DATUM RODJENJA",
+      "dateOfDeath": "DATUM SMRTI"
+    },
+    "biography": {
+      "title": "Biografija"
+    },
+    "memories": {
+      "images": "Images",
+      "videos": "Videos",
+      "getherings": "Getherings",
+      "tributes": "Tributes"
+    }
+  }
+}

@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const keywords = [
   "memorijalni profili",
@@ -82,6 +84,11 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <ToastContainer
+          autoClose={3000}
+          position="top-center"
+          hideProgressBar
+        />
       </body>
     </html>
   );

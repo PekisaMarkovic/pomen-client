@@ -72,6 +72,8 @@
   --white: #fff;
   --overlay: #00000073;
   --grey: #00000099;
+  --dark-grey: #6c6c6c;
+  --medium-grey: #e0dcdc;
   --light-grey: #e6e9ec;
   --hover-grey: #f3f6f8;
   --overlay-dark: #000000b2;
@@ -83,6 +85,8 @@
     --white: #fff;
     --overlay: #00000073;
     --grey: #00000099;
+    --dark-grey: #6c6c6c;
+    --medium-grey: #e0dcdc;
     --light-grey: #e6e9ec;
     --hover-grey: #f3f6f8;
     --overlay-dark: #000000b2;
@@ -91,6 +95,9 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @layer utilities {

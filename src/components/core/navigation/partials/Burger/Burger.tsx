@@ -1,9 +1,8 @@
 "use client";
 
 import BurgerIcon from "@/app/icons/navigation/Burger";
-import CrossIcon from "@/app/icons/general/CrossIcon";
 import { useCallback, useState } from "react";
-import MobileLeftSideMenu from "../MobileLeftSideMenu/MobileLeftSideMenu";
+import MobileLeftSideMenu from "@/components/core/navigation/partials/MobileLeftSideMenu/MobileLeftSideMenu";
 
 const Burger = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

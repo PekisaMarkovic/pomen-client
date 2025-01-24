@@ -1,5 +1,4 @@
 import { ChangeEventHandler, useEffect, useRef, useState } from "react";
-import SingleOption from "./partials/SingleOption";
 import { Label, ErrorMessage } from "@/components/core";
 import { useFormContext, useWatch } from "react-hook-form";
 import { Variant } from "@/components/core/typography/ErrorMessage";
@@ -7,6 +6,8 @@ import get from "lodash.get";
 import { Nullable, SelectOption, Spacing } from "@/interfaces/general";
 import { OVERFLOW_OPTION } from "@/components/constants/select";
 import { Arrow } from "@/app/icons/general";
+import { spacing } from "@/utils/style/spacings";
+import SingleOption from "@/components/core/select/partials/SingleOption";
 
 type Props = {
   placeholder?: string;
@@ -37,16 +38,6 @@ const SingleSelect = ({
   errorMessageType = "select",
   onClickCallback,
 }: Props) => {
-  let marginTop = "";
-  let marginBottom = "";
-
-  if (mt) {
-    marginTop = `mt-${mt}`;
-  }
-  if (mb) {
-    marginBottom = `mt-${mb}`;
-  }
-
   const selected = useWatch({ name });
   const [open, setOpen] = useState<boolean>(false);
   const [inputValue, setInputvalue] = useState(selected?.name || "");
@@ -150,7 +141,7 @@ const SingleSelect = ({
     <div
       className={`flex flex-col relative ${
         isDisabled ? "cursor-not-allowed" : "cursor-pointer"
-      } ${marginTop} ${marginBottom}`}
+      } ${spacing("margin", { t: mt, b: mb })} `}
     >
       {!isLabelHidden && (
         <Label htmlFor={name} label={label} isRequired={isRequired} />

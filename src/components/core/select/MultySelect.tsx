@@ -1,3 +1,16 @@
+import { Arrow, SearchLoopIcon } from "@/app/icons/general";
+import { OVERFLOW_OPTION } from "@/components/constants/select";
+import {
+  CheckboxOption,
+  Divider,
+  ErrorMessage,
+  Label,
+} from "@/components/core";
+import MultySelectedOption from "@/components/core/select/partials/MultySelectedOption";
+import useCustomTranslation from "@/hooks/use-custom-translation";
+import { TranslationsEnums } from "@/i18n/request";
+import { Nullable, SelectOption } from "@/interfaces/general";
+import get from "lodash.get";
 import {
   ChangeEventHandler,
   Fragment,
@@ -6,19 +19,7 @@ import {
   useRef,
   useState,
 } from "react";
-import MultySelectedOption from "@/components/core/select/partials/MultySelectedOption";
 import { useFormContext, useWatch } from "react-hook-form";
-import {
-  Label,
-  ErrorMessage,
-  Divider,
-  CheckboxOption,
-} from "@/components/core";
-import get from "lodash.get";
-import { useTranslation } from "react-i18next";
-import { Nullable, SelectOption } from "@/interfaces/general";
-import { OVERFLOW_OPTION } from "@/components/constants/select";
-import { Arrow, SearchLoopIcon } from "@/app/icons/general";
 
 type Variant = "primary" | "secondary" | "extended";
 
@@ -51,7 +52,7 @@ const MultySelect = ({
   occupied = [],
   labelIcon,
 }: Props) => {
-  const { t } = useTranslation(["g"]);
+  const { t } = useCustomTranslation();
   const selected = useWatch({ name });
   const selectedVals = selected
     ? selected.map((sel: SelectOption) => sel.value)
@@ -240,7 +241,7 @@ const MultySelect = ({
                   className={`py-2 flex-1 font-poppins focus:ring-transparent focus:border-transparent focus:outline-none focus-visible:ring-none w-full ${
                     selected ? "text-sm text-black" : "text-sm text-grey"
                   }`}
-                  placeholder={t("g:search")}
+                  placeholder={t(TranslationsEnums.GENERAL, "search")}
                   onChange={handleOnChangeInput}
                   name={`${name}-text-search`}
                 />

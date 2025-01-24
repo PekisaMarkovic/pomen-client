@@ -1,12 +1,15 @@
 "use client";
 
-import get from "lodash.get";
-import { ChangeEventHandler } from "react";
-import { useFormContext } from "react-hook-form";
-import { Spacing } from "@/interfaces/general";
+import ROUTES from "@/components/constants/a-routes";
 import ErrorMessage, {
   Variant,
 } from "@/components/core/typography/ErrorMessage";
+import { Spacing } from "@/interfaces/general";
+import { spacing } from "@/utils/style/spacings";
+import get from "lodash.get";
+import { useRouter } from "next/navigation";
+import { ChangeEventHandler } from "react";
+import { useFormContext } from "react-hook-form";
 
 type Props = {
   typeHtml?: "text" | "password";
@@ -29,15 +32,8 @@ const InputSearch = ({
   mt,
   errorMessageType = "input",
 }: Props) => {
-  let marginTop = "";
-  let marginBottom = "";
+  const router = useRouter();
 
-  if (mt) {
-    marginTop = `mt-${mt}`;
-  }
-  if (mb) {
-    marginBottom = `mt-${mb}`;
-  }
   const {
     register,
     formState: { errors },
@@ -54,10 +50,19 @@ const InputSearch = ({
     if (disabled) return;
     setValue(name, e.target.value);
     clearErrors(name);
+
+    if (e.target.value.length >= 3) {
+      router.push(`${ROUTES.SEARCH}?f=${e.target.value}`);
+    }
   };
 
   return (
-    <div className={`flex flex-col relative ${marginTop} ${marginBottom}`}>
+    <div
+      className={`flex flex-col relative ${spacing("margin", {
+        t: mt,
+        b: mb,
+      })}`}
+    >
       <input
         autoComplete="off"
         {...register(name, { value: initValue || "" })}

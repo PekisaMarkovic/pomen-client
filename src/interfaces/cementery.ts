@@ -1,3 +1,6 @@
+import { City } from "@/interfaces/cities";
+import { Nullable } from "@/interfaces/general";
+
 export interface Cemetery {
   cemeteryId: number;
   address: string;
@@ -8,7 +11,7 @@ export interface Cemetery {
   updatedAt: Date;
   deletedAt: Date;
   cityId: number;
-  // city: City;;
+  city?: Nullable<City>;
 }
 
 export interface DropdownCementeryDto {

@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { style } from "./style";
+import { style } from "@/components/core/buttons/style";
 
 export type Variant = "secondary" | "primary" | "alt";
 

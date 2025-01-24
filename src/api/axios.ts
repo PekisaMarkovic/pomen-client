@@ -11,7 +11,7 @@ const api = axios.create({
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
-    "x-portal-type": X_PORTAL_TYPE,
+    "X-Portal-Type": X_PORTAL_TYPE,
   },
 });
 

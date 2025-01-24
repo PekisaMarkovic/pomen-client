@@ -1,5 +1,14 @@
 import { getRequestConfig } from "next-intl/server";
 
+export enum TranslationsEnums {
+  GENERAL = "general",
+  LANDING_PAGE = "landing",
+  OUR_GUIDE = "our-guide",
+  SEARCH = "search",
+  CERTIFICATE = "certificate",
+  ERROR = "error",
+}
+
 export default getRequestConfig(async () => {
   // Provide a static locale, fetch a user setting,
   // read from `cookies()`, `headers()`, etc.
@@ -7,19 +16,27 @@ export default getRequestConfig(async () => {
 
   const translations = async () => {
     const generalTranslation = await await import(
-      `../translations/${locale}/general.json`
+      `../translations/${locale}/${TranslationsEnums.GENERAL}.json`
     );
 
     const landingPageTranslation = await await import(
-      `../translations/${locale}/landing-page.json`
+      `../translations/${locale}/${TranslationsEnums.LANDING_PAGE}-page.json`
     );
 
     const ourGuidePageTranslation = await await import(
-      `../translations/${locale}/our-guide.json`
+      `../translations/${locale}/${TranslationsEnums.OUR_GUIDE}.json`
     );
 
     const ourSearchPageTranslation = await await import(
-      `../translations/${locale}/search.json`
+      `../translations/${locale}/${TranslationsEnums.SEARCH}.json`
+    );
+
+    const certificatePageTranslation = await await import(
+      `../translations/${locale}/${TranslationsEnums.CERTIFICATE}.json`
+    );
+
+    const errorTranslation = await await import(
+      `../translations/${locale}/${TranslationsEnums.ERROR}.json`
     );
 
     return {
@@ -27,6 +44,8 @@ export default getRequestConfig(async () => {
       ...landingPageTranslation,
       ...ourGuidePageTranslation,
       ...ourSearchPageTranslation,
+      ...certificatePageTranslation,
+      ...errorTranslation,
     };
   };
 

@@ -72,3 +72,9 @@ export interface LocationPoint {
   x: number;
   y: number;
 }
+
+export interface NewMessage {
+  name: string;
+  email: string;
+  message: string;
+}

@@ -26,7 +26,7 @@ const CertificateCard = ({ cetificate, citiesOptions = [] }: Props) => {
 
   return (
     <Link href={`/profil/${slug}`}>
-      <article className="flex gap-1 border-b-1 border-solid border-b-light-grey py-3 md:py-4 lg:py-6 hover:cursor-pointer hover:bg-hover-grey">
+      <article className="flex gap-1 border-b-1 border-solid border-b-light-grey py-3 md:py-4 lg:py-6 hover:cursor-pointer hover:bg-hover-grey px-2">
         <div>
           {cetificate.profileImage?.url ? (
             <Image
@@ -58,13 +58,20 @@ const CertificateCard = ({ cetificate, citiesOptions = [] }: Props) => {
             )}, ${placeOfDeath}`}
             size="base"
             color="grey"
+            className="mt-1"
           />
 
-          <Paragraph text={biography} size="base" color="grey" />
           <Paragraph
             text={`${cemetery.name}, ${cemetery?.address}, ${city?.name}`}
             size="base"
             color="grey"
+          />
+
+          <Paragraph
+            text={biography}
+            size="base"
+            color="grey"
+            className="mt-2"
           />
         </div>
       </article>

@@ -1,10 +1,9 @@
 import { Heading, MainLink, Paragraph } from "@/components/core";
-import { useTranslations } from "next-intl";
-
-const translationResource = "our-guide";
+import useCustomTranslation from "@/hooks/use-custom-translation";
+import { TranslationsEnums } from "@/i18n/request";
 
 const JoinUs = () => {
-  const t = useTranslations(translationResource);
+  const { t } = useCustomTranslation();
 
   return (
     <section
@@ -14,7 +13,7 @@ const JoinUs = () => {
       <div className="flex flex-col gap-y-6 md:w-9/12 lg:w-6/12">
         <Heading
           id="join-us-title"
-          text={t("join-us.title")}
+          text={t(TranslationsEnums.OUR_GUIDE, "join-us.title")}
           variant="3"
           size="2xl"
           color="black"
@@ -22,21 +21,21 @@ const JoinUs = () => {
         />
 
         <Paragraph
-          text={t("join-us.text1")}
+          text={t(TranslationsEnums.OUR_GUIDE, "join-us.text1")}
           weight="light"
           size="base"
           color="black"
         />
 
         <Paragraph
-          text={t("join-us.text2")}
+          text={t(TranslationsEnums.OUR_GUIDE, "join-us.text2")}
           weight="light"
           size="base"
           color="black"
         />
 
         <Paragraph
-          text={t("join-us.text3")}
+          text={t(TranslationsEnums.OUR_GUIDE, "join-us.text3")}
           weight="light"
           size="base"
           color="black"
@@ -45,7 +44,7 @@ const JoinUs = () => {
         <div className="w-full md:w-1/3">
           <MainLink
             href="#"
-            text={t("join-us.btn")}
+            text={t(TranslationsEnums.OUR_GUIDE, "join-us.btn")}
             variant="secondary"
             noHoverEffect
             size="full"

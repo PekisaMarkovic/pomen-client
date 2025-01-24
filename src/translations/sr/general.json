@@ -1,17 +1,23 @@
 {
-  "g": {
+  "general": {
     "button": {
       "submit": "Posalji"
     },
-    "bababa": {
-      "maxChar": "Max. Characters: {{numberOfChars}}",
+    "fields": {
+      "maxChar": "Max. Characters:",
       "maxCharError": "You have exceeded the maximum number of characters"
     },
     "navigation": {
       "home": "Pocetna",
       "about": "Naš Vodič",
-      "search": "Kontakt",
+      "contact": "Kontakt",
       "profile": "Profili"
-    }
+    },
+    "error": {
+      "title": "Doslo je do greskea",
+      "custom": "Ups! Nešto je pošlo po zlu. Pokušajte ponovo ili kontaktirajte podršku ako problem i dalje postoji."
+    },
+    "successMessage": "Uspesto ste nas kontaktirali.",
+    "errorMessage": "Ups! Nesto je poslo po zlu pri kontaktiranju pokusajte kasnije."
   }
 }

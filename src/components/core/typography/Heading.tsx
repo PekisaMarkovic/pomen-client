@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { fontSizes } from "./style/font-sizes";
 import {
   Color,
   FontFamily,
@@ -7,8 +6,9 @@ import {
   FontWeight,
   Spacing,
 } from "@/interfaces/general";
-import { fontWeights } from "./style/font-weights";
-import { textColor as textColorPicker } from "./style/text-color";
+import { textColor as textColorPicker } from "@/utils/style/text-color";
+import { fontSizes } from "@/utils/style/font-sizes";
+import { fontWeights } from "@/utils/style/font-weights";
 
 type Variant = "1" | "2" | "3" | "4" | "5";
 
