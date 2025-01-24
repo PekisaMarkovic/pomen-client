@@ -1,6 +1,5 @@
 import { Heading, SwiperContainer } from "@/components/core";
 import { generateArrayOfLen } from "@/utils/array";
-import SingleRating from "@/modules/landing-page/ratings/partials/SingleRating";
 import person1 from "@/app/assets/landing/slider/person-1.png";
 import person2 from "@/app/assets/landing/slider/person-2.png";
 import person3 from "@/app/assets/landing/slider/person-3.png";
@@ -8,6 +7,7 @@ import person4 from "@/app/assets/landing/slider/person-4.png";
 import person5 from "@/app/assets/landing/slider/person-5.png";
 import useCustomTranslation from "@/hooks/use-custom-translation";
 import { TranslationsEnums } from "@/i18n/request";
+import SingleRating from "@/modules/landing-page/ratings/partials/SingleRating";
 
 const images = [person1, person2, person4, person3, person5];
 
