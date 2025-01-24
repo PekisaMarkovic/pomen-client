@@ -7,7 +7,7 @@ import person4 from "@/app/assets/landing/slider/person-4.png";
 import person5 from "@/app/assets/landing/slider/person-5.png";
 import useCustomTranslation from "@/hooks/use-custom-translation";
 import { TranslationsEnums } from "@/i18n/request";
-import SingleRating from "@/modules/landing-page/ratings/partials/SingleRating";
+import SingleRating from "@/modules/landing-page/ratings/parr/SingleRating";
 
 const images = [person1, person2, person4, person3, person5];
 
