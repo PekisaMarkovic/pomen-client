@@ -1,11 +1,12 @@
 import { Paragraph, Heading } from "@/components/core";
-import Image, { StaticImageData } from "next/image";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+import Image from "next/image";
 
 type SingleRatingProps = {
   firstName: string;
   lastName: string;
   text: string;
-  img: StaticImageData;
+  img: string | StaticImport;
   alt: string;
 };
 
