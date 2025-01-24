@@ -2,7 +2,7 @@ import { Paragraph, Heading } from "@/components/core";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 
-type SingleRatingProps = {
+type SingleReviewProps = {
   firstName: string;
   lastName: string;
   text: string;
@@ -10,13 +10,13 @@ type SingleRatingProps = {
   alt: string;
 };
 
-const SingleRating = ({
+const SingleReview = ({
   img,
   text,
   firstName,
   lastName,
   alt,
-}: SingleRatingProps) => {
+}: SingleReviewProps) => {
   return (
     <article className="px-2">
       <div className="px-2.5 py-5 border-1 border-solid border-black rounded-sm h-80">
@@ -54,4 +54,4 @@ const SingleRating = ({
   );
 };
 
-export default SingleRating;
+export default SingleReview;

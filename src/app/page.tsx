@@ -5,14 +5,14 @@ import CtaOverview from "@/modules/landing-page/CtaOverview";
 import FAQ from "@/modules/landing-page/faq/FAQ";
 import FunctionalityOverview from "@/modules/landing-page/functionality/FunctionalityOverview";
 import HeroSection from "@/modules/landing-page/hero-section/HeroSection";
-// import RatingSwiper from "@/modules/landing-page/ratings/RatingSwiper";
+import ReviewSwiper from "@/modules/landing-page/reviews/ReviewSwiper";
 
 const Home = () => (
   <GeneralLayout>
     <HeroSection />
     <ApplicationOverview />
     <FunctionalityOverview />
-    {/* <RatingSwiper /> */}
+    <ReviewSwiper />
     <CtaOverview />
     <ContactUs />
     <FAQ />

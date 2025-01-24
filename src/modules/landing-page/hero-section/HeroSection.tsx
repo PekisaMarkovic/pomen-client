@@ -59,7 +59,7 @@ const HeroSection = () => {
         width={1360}
         height={768}
         src={heroBg}
-        alt={t(TranslationsEnums.LANDING_PAGE, "hero.text")}
+        alt={t(TranslationsEnums.LANDING_PAGE, "hero.alt")}
       />
     </section>
   );
