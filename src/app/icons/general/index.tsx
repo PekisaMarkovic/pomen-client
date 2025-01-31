@@ -19,5 +19,5 @@ export {
   UnCheckIcon,
   CertificateUser,
   XIcon,
-  UserPlaceholder,
+  UserPlaceholder
 };

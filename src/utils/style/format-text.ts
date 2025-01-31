@@ -1,7 +1,7 @@
 export function formatText({
   noWrap,
   preWrap,
-  textTransform,
+  textTransform
 }: {
   noWrap?: boolean;
   preWrap?: boolean;

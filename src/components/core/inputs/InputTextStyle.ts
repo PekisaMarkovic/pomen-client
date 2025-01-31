@@ -5,7 +5,7 @@ export const inputTextStyle = ({
   error,
   textCenter,
   variant,
-  disabled,
+  disabled
 }: {
   variant: InputVaraint;
   error: Nullable<string>;

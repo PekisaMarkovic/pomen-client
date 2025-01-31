@@ -30,7 +30,7 @@ const Profil = async ({ params }: Props) => {
     biography,
     location,
     tributes,
-    getherings,
+    getherings
   } = certificate;
 
   return (

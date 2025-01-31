@@ -27,7 +27,7 @@ const MainLink = ({
   noHoverEffect = false,
   disabled = false,
   target,
-  className = "",
+  className = ""
 }: Props) => {
   return (
     <Link
@@ -36,7 +36,7 @@ const MainLink = ({
         size,
         variant,
         noHoverEffect,
-        disabled,
+        disabled
       })} ${className}`}
       target={target}
     >

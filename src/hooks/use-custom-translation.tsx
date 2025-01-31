@@ -9,7 +9,7 @@ const useCustomTranslation = () => {
   };
 
   return {
-    t: customTranslation,
+    t: customTranslation
   };
 };
 

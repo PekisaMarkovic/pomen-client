@@ -30,7 +30,7 @@ const CertificateMainInfo = ({
   placeOfBirth,
   placeOfDeath,
   imageUrl,
-  location,
+  location
 }: Props) => {
   const { t } = useCustomTranslation();
 

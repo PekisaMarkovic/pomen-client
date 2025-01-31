@@ -18,7 +18,7 @@ const CertificateCard = ({ cetificate, citiesOptions = [] }: Props) => {
     placeOfBirth,
     dateOfDeath,
     placeOfDeath,
-    cemetery,
+    cemetery
   } = cetificate;
   const city = citiesOptions.find(
     (opt) => opt.cityId == cetificate?.cemetery?.cityId

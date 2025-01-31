@@ -3,7 +3,7 @@ import {
   Fragment,
   useEffect,
   useRef,
-  useState,
+  useState
 } from "react";
 import SingleOption from "@/components/core/select/partials/SingleOption";
 import { useFormContext, useWatch } from "react-hook-form";
@@ -28,7 +28,7 @@ const SimpleSingleSelect = ({
   initValue,
   handleOnChangeSideEffect,
   occupied = [],
-  isDisabled,
+  isDisabled
 }: Props) => {
   const [open, setOpen] = useState<boolean>(false);
   const selected = useWatch({ name });

@@ -23,10 +23,10 @@ const CheckboxOption = ({
   name,
   leftIcon,
   rightIcon,
-  disabled,
+  disabled
 }: Props) => {
   const {
-    formState: { errors },
+    formState: { errors }
   } = useFormContext();
   const errorObj = get(errors, `${name}.checked`);
 

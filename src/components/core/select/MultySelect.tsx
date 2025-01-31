@@ -4,7 +4,7 @@ import {
   CheckboxOption,
   Divider,
   ErrorMessage,
-  Label,
+  Label
 } from "@/components/core";
 import MultySelectedOption from "@/components/core/select/partials/MultySelectedOption";
 import useCustomTranslation from "@/hooks/use-custom-translation";
@@ -17,7 +17,7 @@ import {
   ReactNode,
   useEffect,
   useRef,
-  useState,
+  useState
 } from "react";
 import { useFormContext, useWatch } from "react-hook-form";
 
@@ -50,7 +50,7 @@ const MultySelect = ({
   isHalfSize,
   isDisabled,
   occupied = [],
-  labelIcon,
+  labelIcon
 }: Props) => {
   const { t } = useCustomTranslation();
   const selected = useWatch({ name });
@@ -71,14 +71,14 @@ const MultySelect = ({
         ? "bottom-full"
         : "top-14"
       : isReverse
-      ? "bottom-full"
-      : "top-full";
+        ? "bottom-full"
+        : "top-full";
 
   const {
     register,
     setValue,
     clearErrors,
-    formState: { errors },
+    formState: { errors }
   } = useFormContext();
 
   const errorObj = get(errors, name);

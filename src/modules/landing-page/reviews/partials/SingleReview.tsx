@@ -15,7 +15,7 @@ const SingleReview = ({
   text,
   firstName,
   lastName,
-  alt,
+  alt
 }: SingleReviewProps) => {
   return (
     <article className="px-2">

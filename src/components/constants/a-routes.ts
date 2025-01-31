@@ -4,7 +4,7 @@ const ROUTES = {
   SEARCH: "/pretraga",
   PRIVACY_POLICY: "/politika-privatnosti",
   TERMS_OF_USE: "/uslovi-koriscenja",
-  ERROR: "/error",
+  ERROR: "/error"
 };
 
 export default ROUTES;

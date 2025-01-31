@@ -2,7 +2,7 @@ import { DropdownCementeryDto } from "@/interfaces/cementery";
 import { DropdownCityDto } from "@/interfaces/cities";
 import {
   mapSingleCitiesOptionsToSelectOptins,
-  mapSingleCemeteryOptionsToSelectOptins,
+  mapSingleCemeteryOptionsToSelectOptins
 } from "@/utils/dto-mappers";
 
 export function checkCityInitValue(

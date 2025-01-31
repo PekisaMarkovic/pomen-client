@@ -13,7 +13,7 @@ function marginSpacing({
   mb,
   mt,
   ml,
-  mr,
+  mr
 }: {
   mt?: Spacing;
   mb?: Spacing;
@@ -51,7 +51,7 @@ function paddingSpacing({
   pb,
   pl,
   pr,
-  pt,
+  pt
 }: {
   pt?: Spacing;
   pb?: Spacing;

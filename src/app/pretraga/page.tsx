@@ -7,13 +7,13 @@ import CertificateList from "@/modules/search/certificate-list/CertificateList";
 import SearchFilters from "@/modules/search/search-filters/SearchFilters";
 import {
   checIsValueValidCemeterySlugAndReturnCityId,
-  checIsValueValidCitySlugAndReturnCityId,
+  checIsValueValidCitySlugAndReturnCityId
 } from "@/modules/search/search-filters/util/check-form-values";
 
 const limit = 10;
 
 export default async function Page({
-  searchParams,
+  searchParams
 }: {
   searchParams: Record<string, string | undefined>;
 }) {
@@ -36,7 +36,7 @@ export default async function Page({
     firstName,
     ...(lastName ? { lastName } : {}),
     ...(cityId ? { cityId: Number(cityId) } : {}),
-    ...(cemeteryId ? { cemeteryId: Number(cemeteryId) } : {}),
+    ...(cemeteryId ? { cemeteryId: Number(cemeteryId) } : {})
   });
 
   return (

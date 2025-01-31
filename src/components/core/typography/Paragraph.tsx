@@ -3,7 +3,7 @@ import {
   FontFamily,
   FontSize,
   FontWeight,
-  Spacing,
+  Spacing
 } from "@/interfaces/general";
 import { fontSizes } from "@/utils/style/font-sizes";
 import { fontWeights } from "@/utils/style/font-weights";
@@ -54,7 +54,7 @@ const Paragraph = ({
   isRequired = false,
   pl,
   pr,
-  textTransform,
+  textTransform
 }: Props) => {
   return (
     <div
@@ -72,7 +72,7 @@ const Paragraph = ({
         } ${fontWeights(weight)} ${formatText({
           noWrap,
           preWrap,
-          textTransform,
+          textTransform
         })}`}
       >
         {text}

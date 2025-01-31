@@ -2,8 +2,9 @@ import ErrorIcon from "@/app/icons/toast/ErrorIcon";
 import QuestionIcon from "@/app/icons/toast/QuestionIcon";
 import SuccessIcon from "@/app/icons/toast/SuccessIcon";
 import WarrningIcon from "@/app/icons/toast/WarrningIcon";
+import { SVGProps } from "react";
 
-interface Props extends React.SVGProps<SVGSVGElement> {
+interface Props extends SVGProps<SVGSVGElement> {
   type: "Error" | "Success" | "Question" | "Warrning";
 }
 

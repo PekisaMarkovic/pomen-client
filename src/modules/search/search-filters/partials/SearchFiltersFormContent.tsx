@@ -11,12 +11,10 @@ import InputSearch from "@/modules/landing-page/hero-section/partials/InputSearc
 import {
   filterCemeteryOptionsByCityId,
   mapCemeteryOptionsToSelectOptins,
-  mapCitiesOptionsToSelectOptins,
+  mapCitiesOptionsToSelectOptins
 } from "@/utils/dto-mappers";
 import { useEffect } from "react";
 import { useFormContext, useWatch } from "react-hook-form";
-
-const translationResource = "search";
 
 type Props = {
   citiesOptions: DropdownCityDto[];
@@ -25,7 +23,7 @@ type Props = {
 
 const SearchFiltersFormContent = ({
   cemeteriesOptions,
-  citiesOptions,
+  citiesOptions
 }: Props) => {
   const { setValue } = useFormContext();
   const { t } = useCustomTranslation();

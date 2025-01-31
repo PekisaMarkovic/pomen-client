@@ -1,6 +1,5 @@
 import { Heading, Paragraph } from "@/components/core";
 import { Tribute } from "@/interfaces/tribute";
-import Image from "next/image";
 
 type Props = {
   tribute: Tribute;

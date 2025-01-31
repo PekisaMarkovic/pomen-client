@@ -24,7 +24,7 @@ const keywords = [
   "voljeni",
   "biografija pretraga",
   "qr",
-  "qrcode",
+  "qrcode"
 ];
 
 export const metadata: Metadata = {
@@ -43,23 +43,23 @@ export const metadata: Metadata = {
         url: "https://pomen.org/og-image.webp",
         width: 4096,
         height: 2734,
-        alt: "Ruke koje nežno drže bele cvetove, simbolizujući sećanje i nežnost.",
-      },
+        alt: "Ruke koje nežno drže bele cvetove, simbolizujući sećanje i nežnost."
+      }
     ],
     locale: "en_US",
-    type: "website",
+    type: "website"
   },
 
   robots: {
     index: true,
     follow: true,
     noarchive: false,
-    nocache: false,
-  },
+    nocache: false
+  }
 };
 
 export default async function RootLayout({
-  children,
+  children
 }: Readonly<React.PropsWithChildren>) {
   const locale = await getLocale();
 

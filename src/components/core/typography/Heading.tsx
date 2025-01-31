@@ -4,7 +4,7 @@ import {
   FontFamily,
   FontSize,
   FontWeight,
-  Spacing,
+  Spacing
 } from "@/interfaces/general";
 import { textColor as textColorPicker } from "@/utils/style/text-color";
 import { fontSizes } from "@/utils/style/font-sizes";
@@ -41,7 +41,7 @@ const Heading = ({
   pl,
   pr,
   textTransform,
-  id,
+  id
 }: Props) => {
   const textColor = textColorPicker(color);
   const paddingLeft = pl ? `pl-${pl}` : "";

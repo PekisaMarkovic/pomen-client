@@ -19,7 +19,7 @@ const Checkbox = ({
   noHover,
   leftIcon,
   rightIcon,
-  disabled,
+  disabled
 }: Props) => {
   const checkbox = useWatch({ name });
   const { register, setValue, clearErrors } = useFormContext();

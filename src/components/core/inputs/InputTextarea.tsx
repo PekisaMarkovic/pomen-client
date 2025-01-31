@@ -24,7 +24,7 @@ const InputTextarea = ({
   isRequired,
   initValue,
   maxChar,
-  isDisabled,
+  isDisabled
 }: Props) => {
   const { t } = useCustomTranslation();
   const value = useWatch({ name }) as string;
@@ -33,7 +33,7 @@ const InputTextarea = ({
     register,
     formState: { errors },
     clearErrors,
-    setValue,
+    setValue
   } = useFormContext();
   const errorObj = get(errors, name);
 

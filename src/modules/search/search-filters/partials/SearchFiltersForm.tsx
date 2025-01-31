@@ -6,15 +6,10 @@ import { SelectOption } from "@/interfaces/general";
 import { debounce } from "@/utils/debounce";
 import { useSearchParams, useRouter } from "next/navigation";
 import { PropsWithChildren, useEffect, useCallback } from "react";
-import {
-  FormProvider,
-  useForm,
-  useFormContext,
-  useWatch,
-} from "react-hook-form";
+import { FormProvider, useForm, useWatch } from "react-hook-form";
 import {
   checkCityInitValue,
-  checkCemeteryInitValue,
+  checkCemeteryInitValue
 } from "@/modules/search/search-filters/util/check-form-values";
 
 type Props = {
@@ -25,7 +20,7 @@ type Props = {
 const SearchFiltersForm = ({
   children,
   cemeteriesOptions,
-  citiesOptions,
+  citiesOptions
 }: PropsWithChildren<Props>) => {
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -37,8 +32,8 @@ const SearchFiltersForm = ({
       cemetery: checkCemeteryInitValue(
         searchParams.get("ce") || "",
         cemeteriesOptions
-      ),
-    },
+      )
+    }
   });
   const { control } = methods;
 

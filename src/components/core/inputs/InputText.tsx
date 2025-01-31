@@ -37,13 +37,13 @@ const InputText = ({
   textCenter,
   mb,
   mt,
-  errorMessageType = "input",
+  errorMessageType = "input"
 }: Props) => {
   const {
     register,
     formState: { errors },
     setValue,
-    clearErrors,
+    clearErrors
   } = useFormContext();
 
   const errorObj = get(errors, name);
@@ -61,7 +61,7 @@ const InputText = ({
     <div
       className={`flex flex-col relative ${spacing("margin", {
         t: mt,
-        b: mb,
+        b: mb
       })}`}
     >
       {variant === "default" && label && (

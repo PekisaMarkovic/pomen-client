@@ -6,7 +6,7 @@ export enum TranslationsEnums {
   OUR_GUIDE = "our-guide",
   SEARCH = "search",
   CERTIFICATE = "certificate",
-  ERROR = "error",
+  ERROR = "error"
 }
 
 export default getRequestConfig(async () => {
@@ -45,12 +45,12 @@ export default getRequestConfig(async () => {
       ...ourGuidePageTranslation,
       ...ourSearchPageTranslation,
       ...certificatePageTranslation,
-      ...errorTranslation,
+      ...errorTranslation
     };
   };
 
   return {
     locale,
-    messages: await translations(),
+    messages: await translations()
   };
 });

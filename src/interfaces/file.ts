@@ -11,7 +11,7 @@ export interface File {
 export enum FileTypeEnum {
   IMAGE = "image",
   VIDEO = "video",
-  DOCUMENT = "document",
+  DOCUMENT = "document"
 }
 
 export interface CertificateFiles {

@@ -43,5 +43,5 @@ export {
   SwiperContainer,
   NavigationLink,
   Divider,
-  MainPaggination,
+  MainPaggination
 };

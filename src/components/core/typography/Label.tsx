@@ -17,7 +17,7 @@ const Label = ({
   isRequired,
   leftIcon,
   rightIcon,
-  isLabelHidden,
+  isLabelHidden
 }: Props) => {
   const [entered, setEntered] = useState<boolean>(false);
   const hiddenStyle = isLabelHidden ? "h-0 w-0 overflow-hidden -z-1" : "";

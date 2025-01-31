@@ -12,7 +12,7 @@ type Props = {
 const SwiperContainer = ({
   children,
   speed = 500,
-  autoplaySpeed = 3000,
+  autoplaySpeed = 3000
 }: PropsWithChildren<Props>) => {
   const settings = {
     dots: true,
@@ -31,8 +31,8 @@ const SwiperContainer = ({
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
-        },
+          dots: true
+        }
       },
 
       {
@@ -42,8 +42,8 @@ const SwiperContainer = ({
           slidesToScroll: 2,
           initialSlide: 2,
           infinite: true,
-          dots: true,
-        },
+          dots: true
+        }
       },
       {
         breakpoint: 1024,
@@ -51,9 +51,9 @@ const SwiperContainer = ({
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
-        },
-      },
+          dots: true
+        }
+      }
     ],
     nextArrow: (
       <div>
@@ -64,7 +64,7 @@ const SwiperContainer = ({
       <div>
         <Arrow type="LEFT" />
       </div>
-    ),
+    )
   };
 
   return <Slider {...settings}>{children}</Slider>;

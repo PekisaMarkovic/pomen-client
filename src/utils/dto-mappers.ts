@@ -5,12 +5,12 @@ import { SelectOption } from "@/interfaces/general";
 export function mapSingleCitiesOptionsToSelectOptins({
   cityId,
   name,
-  slug,
+  slug
 }: DropdownCityDto): SelectOption {
   return {
     id: `${cityId}`,
     name,
-    value: slug,
+    value: slug
   };
 }
 
@@ -23,12 +23,12 @@ export function mapCitiesOptionsToSelectOptins(
 export function mapSingleCemeteryOptionsToSelectOptins({
   cemeteryId,
   name,
-  slug,
+  slug
 }: DropdownCementeryDto): SelectOption {
   return {
     id: `${cemeteryId}`,
     name,
-    value: slug,
+    value: slug
   };
 }
 

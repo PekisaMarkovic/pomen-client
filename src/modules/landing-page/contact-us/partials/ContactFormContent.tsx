@@ -12,7 +12,7 @@ const ContactFormContent = () => {
   const { handleSubmit } = useFormContext();
   const messsages = {
     success: t(TranslationsEnums.GENERAL, "successMessage"),
-    error: t(TranslationsEnums.GENERAL, "errorMessage"),
+    error: t(TranslationsEnums.GENERAL, "errorMessage")
   };
 
   const onSubmit: SubmitHandler<FieldValues> = async (values) => {
@@ -20,7 +20,7 @@ const ContactFormContent = () => {
       await createNewMessage({
         email: values.email,
         message: values.message,
-        name: values.name,
+        name: values.name
       });
 
       toast(messsages.success);

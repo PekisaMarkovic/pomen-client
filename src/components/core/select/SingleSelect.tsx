@@ -36,7 +36,7 @@ const SingleSelect = ({
   mb,
   isDisabled,
   errorMessageType = "select",
-  onClickCallback,
+  onClickCallback
 }: Props) => {
   const selected = useWatch({ name });
   const [open, setOpen] = useState<boolean>(false);
@@ -51,7 +51,7 @@ const SingleSelect = ({
     register,
     setValue,
     formState: { errors },
-    clearErrors,
+    clearErrors
   } = useFormContext();
   const errorObj = get(errors, name);
 

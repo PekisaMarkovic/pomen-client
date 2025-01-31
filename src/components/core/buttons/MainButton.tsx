@@ -31,7 +31,7 @@ const MainButton = ({
   rightIcon,
   ariaLabel,
   noHoverEffect = false,
-  disabled = false,
+  disabled = false
 }: Props) => {
   return (
     <button
@@ -42,7 +42,7 @@ const MainButton = ({
         size,
         variant,
         noHoverEffect,
-        disabled,
+        disabled
       })} ${className}`}
       disabled={disabled}
     >

@@ -2,7 +2,7 @@
 
 import ROUTES from "@/components/constants/a-routes";
 import ErrorMessage, {
-  Variant,
+  Variant
 } from "@/components/core/typography/ErrorMessage";
 import { Spacing } from "@/interfaces/general";
 import { spacing } from "@/utils/style/spacings";
@@ -30,7 +30,7 @@ const InputSearch = ({
   disabled,
   mb,
   mt,
-  errorMessageType = "input",
+  errorMessageType = "input"
 }: Props) => {
   const router = useRouter();
 
@@ -38,7 +38,7 @@ const InputSearch = ({
     register,
     formState: { errors },
     setValue,
-    clearErrors,
+    clearErrors
   } = useFormContext();
 
   const errorObj = get(errors, name);
@@ -60,7 +60,7 @@ const InputSearch = ({
     <div
       className={`flex flex-col relative ${spacing("margin", {
         t: mt,
-        b: mb,
+        b: mb
       })}`}
     >
       <input

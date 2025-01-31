@@ -5,7 +5,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/modules/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   theme: {
     extend: {
@@ -18,20 +18,20 @@ const config: Config = {
         "medium-grey": "var(--medium-grey)",
         "light-grey": "var(--light-grey)",
         "hover-grey": "var(--hover-grey)",
-        "overlay-dark": "var(--overlay-dark)",
+        "overlay-dark": "var(--overlay-dark)"
       },
       boxShadow: {
         faq: "1px 4px 10px 0px #00000040",
         "drop-down": "rgba(64, 64, 65, 0.16) 0px 12px 24px 0px",
         contact: "0px 4px 10px 0px #00000040",
-        "side-menu": "0px 20px 10px 0px #0000004D",
+        "side-menu": "0px 20px 10px 0px #0000004D"
       },
       fontFamily: {
-        montserrat: "'Montserrat'",
+        montserrat: "'Montserrat'"
       },
       borderWidth: {
         1: "1px",
-        5: "5px",
+        5: "5px"
       },
       borderRadius: {
         none: "0",
@@ -44,7 +44,7 @@ const config: Config = {
         xxl: "40px",
         "xxl-plus": "48px",
         xxxl: "56px",
-        full: "50%",
+        full: "50%"
       },
 
       zIndex: {
@@ -52,10 +52,10 @@ const config: Config = {
         2: "2",
         3: "3",
         4: "4",
-        5: "5",
-      },
-    },
+        5: "5"
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };
 export default config;

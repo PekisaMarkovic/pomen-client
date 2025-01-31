@@ -44,7 +44,7 @@ const StepByStep = () => {
                 title: t(
                   TranslationsEnums.OUR_GUIDE,
                   `step-by-step.main.list[${i}].title`
-                ),
+                )
               }))}
             />
           </div>

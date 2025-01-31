@@ -27,7 +27,7 @@ toast.success = (message, options?: unknown) => {
       progressClassName: "bg-green",
       className: "bg-green",
       closeButton: false,
-      icon: undefined,
+      icon: undefined
     }
   );
 };
@@ -41,7 +41,7 @@ toast.info = (message) => {
     {
       className: "bg-blue",
       closeButton: false,
-      icon: undefined,
+      icon: undefined
     }
   );
 };
@@ -55,7 +55,7 @@ toast.warning = (message) => {
     {
       className: "bg-orange",
       closeButton: false,
-      icon: undefined,
+      icon: undefined
     }
   );
 };
@@ -70,7 +70,7 @@ toast.error = (message, options) => {
       ...options,
       className: "bg-red",
       closeButton: false,
-      icon: undefined,
+      icon: undefined
     }
   );
 };
