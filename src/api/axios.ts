@@ -1,7 +1,7 @@
 import axios, {
   AxiosError,
   AxiosResponse,
-  InternalAxiosRequestConfig,
+  InternalAxiosRequestConfig
 } from "axios";
 
 const X_PORTAL_TYPE = "CLIENT";
@@ -11,8 +11,8 @@ const api = axios.create({
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
-    "X-Portal-Type": X_PORTAL_TYPE,
-  },
+    "X-Portal-Type": X_PORTAL_TYPE
+  }
 });
 
 export const apiForServerSide = axios.create({
@@ -20,8 +20,8 @@ export const apiForServerSide = axios.create({
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
-    "x-portal-type": X_PORTAL_TYPE,
-  },
+    "x-portal-type": X_PORTAL_TYPE
+  }
 });
 
 const onRequest = async (config: InternalAxiosRequestConfig) => {
@@ -33,7 +33,7 @@ const onRequest = async (config: InternalAxiosRequestConfig) => {
     config.headers["Authorization"] = `Bearer ${token || ""}`;
     config.headers["X-Authorization"] = `Bearer ${token || ""}`;
   } catch (e) {
-    console.log(e);
+    return Promise.reject(e);
   }
 
   return config;

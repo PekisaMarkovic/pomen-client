@@ -1,4 +1,6 @@
-export interface InstagramProps extends React.SVGProps<SVGSVGElement> {
+import { SVGProps } from "react";
+
+export interface InstagramProps extends SVGProps<SVGSVGElement> {
   type: "WHITE" | "DARK";
 }
 const InstagramIcon = (props: InstagramProps) => {

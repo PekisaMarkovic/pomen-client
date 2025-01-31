@@ -1,4 +1,6 @@
-export interface FacebookProps extends React.SVGProps<SVGSVGElement> {
+import { SVGProps } from "react";
+
+export interface FacebookProps extends SVGProps<SVGSVGElement> {
   type: "WHITE" | "DARK";
 }
 const CrossIcon = (props: FacebookProps) => {

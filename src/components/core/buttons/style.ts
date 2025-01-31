@@ -4,7 +4,7 @@ export const style = ({
   size,
   variant,
   disabled,
-  noHoverEffect,
+  noHoverEffect
 }: {
   size: Size;
   variant: Variant;
@@ -34,9 +34,8 @@ export const style = ({
       break;
 
     case "full":
-      classes.push(
-        "py-2 px-6 text-sm rounded-xs w-full flex items-center justify-center"
-      );
+      classes.push("py-2 px-6 text-sm rounded-xs w-full flex");
+      classes.push("items-center justify-center");
       break;
 
     default:
@@ -54,23 +53,25 @@ export const style = ({
       break;
 
     case "alt":
-      const hoverAlt = noHoverEffect
-        ? ""
-        : "hover:border-black hover:text-white hover:bg-black";
+      {
+        const hoverAlt = noHoverEffect
+          ? ""
+          : "hover:border-black hover:text-white hover:bg-black";
 
-      classes.push(
-        `text-white bg-transprent border-white ${hoverAlt} border-1 border-solid`
-      );
+        classes.push(`text-white bg-transprent border-white ${hoverAlt}`);
+        classes.push("border-1 border-solid");
+      }
       break;
 
     case "secondary":
-      const hoverSecondary = noHoverEffect
-        ? ""
-        : "hover:border-white hover:text-white hover:bg-transparent";
+      {
+        const hoverSecondary = noHoverEffect
+          ? ""
+          : "hover:border-white hover:text-white hover:bg-transparent";
 
-      classes.push(
-        `text-white bg-black border-black ${hoverSecondary} border-1 border-solid`
-      );
+        classes.push(`text-white bg-black border-black ${hoverSecondary}`);
+        classes.push("border-1 border-solid");
+      }
       break;
 
     default:

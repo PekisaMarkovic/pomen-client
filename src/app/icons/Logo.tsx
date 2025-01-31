@@ -1,4 +1,6 @@
-export interface LogoProps extends React.SVGProps<SVGSVGElement> {
+import { SVGProps } from "react";
+
+export interface LogoProps extends SVGProps<SVGSVGElement> {
   type: "WHITE" | "DARK";
 }
 const Logo = (props: LogoProps) => {

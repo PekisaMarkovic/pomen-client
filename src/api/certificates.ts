@@ -14,7 +14,11 @@ export const searchCertificates = async (body: SearchCertificateDto) => {
     );
     return data;
   } catch (e) {
-    return redirect(ROUTES.ERROR);
+    if (e) {
+      return redirect(ROUTES.ERROR);
+    } else {
+      return redirect(ROUTES.ERROR);
+    }
   }
 };
 
@@ -25,6 +29,10 @@ export const getCertificateBySlug = async (slug: string) => {
     );
     return data;
   } catch (e) {
-    return redirect(ROUTES.ERROR);
+    if (e) {
+      return redirect(ROUTES.ERROR);
+    } else {
+      return redirect(ROUTES.ERROR);
+    }
   }
 };

@@ -1,6 +1,6 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler, SVGProps } from "react";
 
-export interface SearchProps extends React.SVGProps<SVGSVGElement> {
+export interface SearchProps extends SVGProps<SVGSVGElement> {
   onClick?: MouseEventHandler<SVGSVGElement>;
 }
 

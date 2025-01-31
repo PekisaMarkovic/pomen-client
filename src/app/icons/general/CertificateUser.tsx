@@ -1,4 +1,6 @@
-const CertificateUser = (props: React.SVGProps<SVGSVGElement>) => {
+import { SVGProps } from "react";
+
+const CertificateUser = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width="146"
@@ -6,6 +8,7 @@ const CertificateUser = (props: React.SVGProps<SVGSVGElement>) => {
       viewBox="0 0 146 146"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M73.0003 12.1667C39.4021 12.1667 12.167 39.4017 12.167 73C12.167 106.598 39.4021 133.833 73.0003 133.833C106.599 133.833 133.834 106.598 133.834 73C133.834 39.4017 106.599 12.1667 73.0003 12.1667Z"

@@ -1,4 +1,6 @@
-const XIcon = (props: React.SVGProps<SVGSVGElement>) => {
+import { SVGProps } from "react";
+
+const XIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,6 +8,7 @@ const XIcon = (props: React.SVGProps<SVGSVGElement>) => {
       height="16"
       viewBox="0 0 16 16"
       fill="none"
+      {...props}
     >
       <g opacity="0.26">
         <path

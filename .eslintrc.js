@@ -23,6 +23,7 @@ module.exports = {
   rules: {
     "no-var": "error",
     indent: ["error", 2, { SwitchCase: 1 }],
+    "prettier/prettier": ["error", { trailingComma: "none" }],
     "prefer-const": "error",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": ["error"],

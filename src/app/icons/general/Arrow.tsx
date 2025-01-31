@@ -1,6 +1,6 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler, SVGProps } from "react";
 
-export interface ArrowProps extends React.SVGProps<SVGSVGElement> {
+export interface ArrowProps extends SVGProps<SVGSVGElement> {
   type: "DOWN" | "LEFT" | "RIGHT" | "UP";
   onClick?: MouseEventHandler<SVGSVGElement>;
 }

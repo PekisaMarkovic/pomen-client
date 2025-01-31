@@ -1,4 +1,6 @@
-const SearchLoopIcon = (props: React.SVGProps<SVGSVGElement>) => {
+import { SVGProps } from "react";
+
+const SearchLoopIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" {...props}>
       <path fill="#e7e2dc" d="M0 0h128v128H0z" />

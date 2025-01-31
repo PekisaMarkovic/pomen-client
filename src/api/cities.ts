@@ -12,6 +12,10 @@ export const getCitiesOptions = async () => {
     );
     return data;
   } catch (e) {
-    return redirect(ROUTES.ERROR);
+    if (e) {
+      return redirect(ROUTES.ERROR);
+    } else {
+      return redirect(ROUTES.ERROR);
+    }
   }
 };
