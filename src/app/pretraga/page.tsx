@@ -9,8 +9,15 @@ import {
   checIsValueValidCemeterySlugAndReturnCityId,
   checIsValueValidCitySlugAndReturnCityId
 } from "@/modules/search/search-filters/util/check-form-values";
+import { Metadata } from "next";
 
 const limit = 10;
+
+export const metadata: Metadata = {
+  title: "Pretrega",
+  description:
+    "Pretražite memorijalne profile i pronađite uspomene na voljene osobe. Pregledajte biografije, slike, porodične veze i mesta počinka na jednom mestu."
+};
 
 export default async function Page({
   searchParams

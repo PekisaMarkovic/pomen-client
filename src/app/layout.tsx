@@ -46,8 +46,12 @@ export const metadata: Metadata = {
         alt: "Ruke koje nežno drže bele cvetove, simbolizujući sećanje i nežnost."
       }
     ],
+
     locale: "en_US",
     type: "website"
+  },
+  twitter: {
+    card: "summary_large_image"
   },
 
   robots: {
