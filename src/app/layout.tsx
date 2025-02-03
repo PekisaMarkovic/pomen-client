@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ogImage from "@/app/assets/seo/or-image.webp";
 
 const keywords = [
   "memorijalni profili",
@@ -41,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "Pomen",
     images: [
       {
-        url: "https://pomen.org/og-image.webp",
+        url: ogImage.src,
         width: 4096,
         height: 2734,
         alt: "Ruke koje nežno drže bele cvetove, simbolizujući sećanje i nežnost."
