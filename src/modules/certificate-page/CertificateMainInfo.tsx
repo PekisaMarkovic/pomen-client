@@ -1,4 +1,3 @@
-import functinalityBg from "@/app/assets/landing/hands-and-flowers.webp";
 import { CertificateUser } from "@/app/icons/general";
 import { Heading, Paragraph } from "@/components/core";
 import useCustomTranslation from "@/hooks/use-custom-translation";
@@ -8,6 +7,7 @@ import PersonalInformation from "@/modules/certificate-page/partials/PersonalInf
 import { formatDateDayMonthYear } from "@/utils/date";
 import Image from "next/image";
 import Link from "next/link";
+import heroBg from "@/app/assets/landing/hero-bg.webp";
 
 type Props = {
   firstName: string;
@@ -36,13 +36,11 @@ const CertificateMainInfo = ({
 
   return (
     <div className="relative flex flex-col justify-center items-center p-4">
-      <div className="absolute -z-1 bg-overlay inset-0 w-full h-full object-cover h-1/3" />
-
       <Image
-        className="absolute -z-2 inset-0 w-full h-full object-cover h-1/3"
+        className="absolute -z-2 inset-0 w-full object-cover h-1/3"
         width={4096}
         height={2734}
-        src={functinalityBg}
+        src={heroBg}
         alt={t(TranslationsEnums.LANDING_PAGE, "functionality.alt")}
       />
 
@@ -107,7 +105,7 @@ const CertificateMainInfo = ({
           </div>
 
           {location?.y && location?.x && (
-            <div className="flex flex-col w-52">
+            <div className="relative flex flex-col mb-20">
               <Paragraph
                 text={t(TranslationsEnums.CERTIFICATE, "person-info.place")}
                 weight="light"
@@ -118,6 +116,7 @@ const CertificateMainInfo = ({
               <Link
                 href={`http://maps.google.co.uk/maps?q=${location?.y},${location?.x}`}
                 target="_blank"
+                className="absolute top-6"
               >
                 <Paragraph
                   text={fullCemeteryName}

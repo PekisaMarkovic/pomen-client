@@ -30,13 +30,15 @@ const CertificateCard = ({ cetificate, citiesOptions = [] }: Props) => {
       <article className="flex gap-1 border-b-1 border-solid border-b-light-grey py-3 md:py-4 lg:py-6 hover:cursor-pointer hover:bg-hover-grey px-2">
         <div>
           {cetificate.profileImage?.url ? (
-            <Image
-              src={cetificate.profileImage?.url}
-              alt={`${firstName} ${lastName} ${biography}`}
-              height={56}
-              width={56}
-              className="rounded-full overflow-hidden"
-            />
+            <div className="w-14 h-14">
+              <Image
+                src={cetificate.profileImage?.url}
+                alt={`${firstName} ${lastName} ${biography}`}
+                height={56}
+                width={56}
+                className="rounded-full overflow-hidden"
+              />
+            </div>
           ) : (
             <div className="w-14 h-14 rounded-full overflow-hidden">
               <UserPlaceholder />
