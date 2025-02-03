@@ -2,8 +2,7 @@ import GeneralLayout from "@/components/layouts/GeneralLayout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Uslovi Korišćenja - Platforma omogućava kreiranje memorijalnih profila, deljenje uspomena",
+  title: "Uslovi Korišćenja - Platforma koja omogućava deljenje uspomena",
   description:
     "Pregledajte uslove korišćenja naše platforme. Saznajte pravila, obaveze i prava korisnika prilikom korišćenja naših usluga."
 };

@@ -29,14 +29,12 @@ const keywords = [
 ];
 
 export const metadata: Metadata = {
-  title:
-    "Pomen - Platforma koja omogućava kreiranje memorijalnih profila, deljenje uspomena",
+  title: "Pomen - Platforma koja omogućava deljenje uspomena",
   description:
     "Naša platforma omogućava kreiranje memorijalnih profila, deljenje uspomena, postavljanje fotografija i pretragu biografija i lokacija memorijala.",
   keywords,
   openGraph: {
-    title:
-      "Pomen - Platforma koja omogućava kreiranje memorijalnih profila, deljenje uspomena",
+    title: "Pomen - Platforma koja omogućava deljenje uspomena",
     description:
       "Naša platforma omogućava kreiranje memorijalnih profila, deljenje uspomena, postavljanje fotografija i pretragu biografija i lokacija memorijala.",
     url: "https://pomen.org",
