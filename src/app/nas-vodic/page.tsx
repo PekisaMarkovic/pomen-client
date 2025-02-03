@@ -8,7 +8,8 @@ import WhyQRcode from "@/modules/our-guide/WhyQRcode";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Naš Vodič",
+  title:
+    "Naš Vodič - Platforma omogućava kreiranje memorijalnih profila, deljenje uspomena",
   description:
     "Inovacija koja pružaju nove mogućnosti za očuvanje uspomena na naše najmilije. Moderan način za očuvanje sećanja, omogućavajući posetiocima brz pristup profilu."
 };

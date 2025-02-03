@@ -2,7 +2,8 @@ import GeneralLayout from "@/components/layouts/GeneralLayout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Politika Privatnosti",
+  title:
+    "Politika Privatnosti - Platforma omogućava kreiranje memorijalnih profila, deljenje uspomena",
   description:
     "Saznajte kako prikupljamo, koristimo i štitimo vaše podatke. Vaša privatnost nam je važna – pročitajte našu politiku privatnosti"
 };

@@ -14,7 +14,8 @@ import { Metadata } from "next";
 const limit = 10;
 
 export const metadata: Metadata = {
-  title: "Pretrega",
+  title:
+    "Pretrega - Platforma omogućava kreiranje memorijalnih profila, deljenje uspomena",
   description:
     "Pretražite memorijalne profile i pronađite uspomene na voljene osobe. Pregledajte biografije, slike, porodične veze i mesta počinka na jednom mestu."
 };
