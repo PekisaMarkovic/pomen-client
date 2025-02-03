@@ -15,7 +15,7 @@ const ApplicationOverview = () => {
       aria-labelledby="application-details"
       className="md:flex md:justify-center"
     >
-      <div className="px-6 py-14 xl:px-12 grid grid-cols-1 lg:grid-cols-2 gap-y-6 md:w-9/12 lg:w-6/12">
+      <div className="px-6 py-14 xl:px-12 grid grid-cols-1 lg:grid-cols-2 gap-6 md:w-9/12 lg:w-6/12">
         <div>
           <Heading
             id="application-details-title"
@@ -24,14 +24,14 @@ const ApplicationOverview = () => {
             size="2xl"
             color="black"
             weight="semibold"
-            className="text-center"
+            className="mb-4"
           />
 
           <Paragraph
             text={t(TranslationsEnums.LANDING_PAGE, "applicationDetails.text")}
             color="black"
             size="base"
-            className="mt-2"
+            className="mb-2"
           />
 
           <NavigationLink

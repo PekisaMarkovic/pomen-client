@@ -44,103 +44,66 @@ const Heading = ({
   id
 }: Props) => {
   const textColor = textColorPicker(color);
+  const textWeight = fontWeights(weight);
+  const textSize = fontSizes(size);
   const paddingLeft = pl ? `pl-${pl}` : "";
   const paddingRight = pr ? `pr-${pr}` : "";
   const txtTransform = textTransform || "";
 
-  const checkVariant = () => {
-    switch (variant) {
-      case "1":
-        return (
-          <h1
-            id={id}
-            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeights(
-              weight
-            )} ${fontSizes(
-              size
-            )} ${textColor} flex gap-x-3 items-center ${className}`}
-          >
-            {leftIcon}
-            {text}
-            {rightIcon}
-          </h1>
-        );
-      case "2":
-        return (
-          <h2
-            id={id}
-            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeights(
-              weight
-            )} ${fontSizes(
-              size
-            )} ${textColor} uppercase flex gap-x-3 items-center ${className}`}
-          >
-            {leftIcon}
-            {text}
-            {rightIcon}
-          </h2>
-        );
-      case "3":
-        return (
-          <h3
-            id={id}
-            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeights(
-              weight
-            )} ${fontSizes(
-              size
-            )} ${textColor} flex gap-x-3 items-center ${className}`}
-          >
-            {leftIcon}
-            {text}
-            {rightIcon}
-          </h3>
-        );
-      case "4":
-        return (
-          <h4
-            id={id}
-            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeights(
-              weight
-            )} ${fontSizes(
-              size
-            )} ${textColor} flex gap-x-3 items-center ${className}`}
-          >
-            {leftIcon}
-            {text}
-            {rightIcon}
-          </h4>
-        );
-
-      case "5":
-        return (
-          <h5
-            id={id}
-            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${fontWeights(
-              weight
-            )} ${fontSizes(
-              size
-            )} ${textColor} flex gap-x-3 items-center ${className}`}
-          >
-            {leftIcon}
-            {text}
-            {rightIcon}
-          </h5>
-        );
-
-      default:
-        return (
-          <h1
-            id={id}
-            className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} text-black gap-x-3 text-sm ${className}`}
-          >
-            {leftIcon}
-            {text}
-            {rightIcon}
-          </h1>
-        );
-    }
+  const variants: Record<Variant, ReactNode> = {
+    "1": (
+      <h1
+        id={id}
+        className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${textWeight} ${textSize} ${textColor} flex gap-x-3 items-center ${className}`}
+      >
+        {leftIcon}
+        {text}
+        {rightIcon}
+      </h1>
+    ),
+    "2": (
+      <h2
+        id={id}
+        className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${textWeight} ${textSize} ${textColor} uppercase flex gap-x-3 items-center ${className}`}
+      >
+        {leftIcon}
+        {text}
+        {rightIcon}
+      </h2>
+    ),
+    "3": (
+      <h3
+        id={id}
+        className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${textWeight} ${textSize} ${textColor} flex gap-x-3 items-center ${className}`}
+      >
+        {leftIcon}
+        {text}
+        {rightIcon}
+      </h3>
+    ),
+    "4": (
+      <h4
+        id={id}
+        className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${textWeight} ${textSize} ${textColor} flex gap-x-3 items-center ${className}`}
+      >
+        {leftIcon}
+        {text}
+        {rightIcon}
+      </h4>
+    ),
+    "5": (
+      <h5
+        id={id}
+        className={`font-${fontFamily} ${paddingLeft} ${paddingRight} ${txtTransform} ${textWeight} ${textSize} ${textColor} flex gap-x-3 items-center ${className}`}
+      >
+        {leftIcon}
+        {text}
+        {rightIcon}
+      </h5>
+    )
   };
-  return <>{checkVariant()}</>;
+
+  return variants[variant];
 };
 
 export default Heading;

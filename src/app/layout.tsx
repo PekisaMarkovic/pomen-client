@@ -86,6 +86,7 @@ export default async function RootLayout({
         />
       </head>
       <body>
+        <div className="hidden text-black text-white text-grey text-light-grey text-xs text-sm text-base text-lg text-xl text-2xl text-3xl text-4xl text-5xl text-6xl font-thin font-light font-normal font-medium font-semibold font-bold font-extrabold font-black" />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
