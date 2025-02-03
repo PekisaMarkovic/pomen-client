@@ -69,7 +69,7 @@ const CertificateMainInfo = ({
 
       <div className="flex flex-col items-center mt-4">
         <div className="flex flex-col gap-2">
-          <div className="flex gap-8">
+          <div className="flex gap-8 xl:gap-16">
             <PersonalInformation
               label={t(
                 TranslationsEnums.CERTIFICATE,
@@ -86,7 +86,7 @@ const CertificateMainInfo = ({
               value={formatDateDayMonthYear(dateOfDeath)}
             />
           </div>
-          <div className="flex gap-10">
+          <div className="flex gap-8 xl:gap-16">
             <PersonalInformation
               label={t(
                 TranslationsEnums.CERTIFICATE,
