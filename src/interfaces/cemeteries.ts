@@ -37,3 +37,10 @@ export interface SearchCertificateDto {
   firstName?: string;
   lastName?: string;
 }
+
+export interface CertificateOptionsDto {
+  image: string;
+  name: string;
+  slug: string;
+  certificateId: string;
+}

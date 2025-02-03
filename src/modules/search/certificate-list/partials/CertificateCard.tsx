@@ -1,4 +1,5 @@
 import { UserPlaceholder } from "@/app/icons/general";
+import ROUTES from "@/components/constants/a-routes";
 import { Paragraph } from "@/components/core";
 import { Certificate } from "@/interfaces/cemeteries";
 import { DropdownCityDto } from "@/interfaces/cities";
@@ -25,7 +26,7 @@ const CertificateCard = ({ cetificate, citiesOptions = [] }: Props) => {
   );
 
   return (
-    <Link href={`/profil/${slug}`}>
+    <Link href={`/${ROUTES.PROFILE}/${slug}`}>
       <article className="flex gap-1 border-b-1 border-solid border-b-light-grey py-3 md:py-4 lg:py-6 hover:cursor-pointer hover:bg-hover-grey px-2">
         <div>
           {cetificate.profileImage?.url ? (
