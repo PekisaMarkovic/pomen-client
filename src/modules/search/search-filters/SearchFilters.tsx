@@ -3,7 +3,7 @@
 import { DropdownCementeryDto } from "@/interfaces/cementery";
 import { DropdownCityDto } from "@/interfaces/cities";
 import SearchFiltersForm from "@/modules/search/search-filters/partials/SearchFiltersForm";
-import SearchFiltersFormContent from "./partials/SearchFiltersFormContent";
+import SearchFiltersFormContent from "@/modules/search/search-filters/partials/SearchFiltersFormContent";
 
 type Props = {
   citiesOptions: DropdownCityDto[];

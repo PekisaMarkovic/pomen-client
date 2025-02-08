@@ -4,6 +4,7 @@ export enum TranslationsEnums {
   GENERAL = "general",
   LANDING_PAGE = "landing",
   OUR_GUIDE = "our-guide",
+  BLOG_PAGE = "blogs",
   SEARCH = "search",
   CERTIFICATE = "certificate",
   ERROR = "error"
@@ -21,6 +22,10 @@ export default getRequestConfig(async () => {
 
     const landingPageTranslation = await await import(
       `../translations/${locale}/${TranslationsEnums.LANDING_PAGE}-page.json`
+    );
+
+    const blogPageTranslation = await await import(
+      `../translations/${locale}/${TranslationsEnums.BLOG_PAGE}.json`
     );
 
     const ourGuidePageTranslation = await await import(
@@ -45,6 +50,7 @@ export default getRequestConfig(async () => {
       ...ourGuidePageTranslation,
       ...ourSearchPageTranslation,
       ...certificatePageTranslation,
+      ...blogPageTranslation,
       ...errorTranslation
     };
   };

@@ -16,7 +16,7 @@ const DesktopNavigation = () => {
           <Logo type="DARK" />
         </Link>
       </div>
-      <div className="w-1/2 grid grid-cols-4 gap-x-8 items-center">
+      <div className="w-1/2 grid grid-cols-5 gap-x-8 items-center">
         {NAVIGATION_LINKS.map(({ href, text }, i) => (
           <NavigationLink
             text={t(TranslationsEnums.GENERAL, text)}

@@ -8,7 +8,7 @@ import CertificateMainInfo from "@/modules/certificate-page/CertificateMainInfo"
 import Memories from "@/modules/certificate-page/memories/Memories";
 import PersonBiography from "@/modules/certificate-page/PersonBiography";
 import TrubutesAndGetherings from "@/modules/certificate-page/trubutes-and-getherings/TrubutesAndGetherings";
-import { trimString } from "@/utils/string";
+import { trimStringSEODescription } from "@/utils/string";
 import { Metadata } from "next";
 import { cache } from "react";
 
@@ -27,7 +27,7 @@ type Props = {
 export async function generateStaticParams() {
   const certificateOptions = await getCertificateOptions();
 
-  return certificateOptions.map((opt) => opt.certificateId);
+  return certificateOptions.map((opt) => opt.slug);
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `Profil - ${certificate.firstName} ${certificate.lastName}`,
-    description: trimString(certificate.biography),
+    description: trimStringSEODescription(certificate.biography),
     openGraph: {
       images: [{ url: certificate.profileImage?.url }]
     }
