@@ -6,6 +6,8 @@ import { getLocale, getMessages } from "next-intl/server";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ogImage from "@/app/assets/seo/or-image.webp";
+import letterBlack from "@/app/assets/general/logo-letter-black.webp";
+import letterWhite from "@/app/assets/general/logo-letter-white.webp";
 
 const keywords = [
   "memorijalni profili",
@@ -33,6 +35,20 @@ export const metadata: Metadata = {
   description:
     "Naša platforma omogućava kreiranje memorijalnih profila, deljenje uspomena, postavljanje fotografija i pretragu biografija i lokacija memorijala.",
   keywords,
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: letterBlack.src,
+        href: letterBlack.src
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: letterWhite.src,
+        href: letterWhite.src
+      }
+    ]
+  },
   openGraph: {
     title: "Pomen - Platforma koja omogućava deljenje uspomena",
     description:

@@ -18,9 +18,9 @@ const CrossIcon = (props: FacebookProps) => {
       <path
         d="M1 15L8 8L15 15M15 1L7.99867 8L1 1"
         stroke={color}
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

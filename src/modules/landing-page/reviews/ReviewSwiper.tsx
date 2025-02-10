@@ -30,7 +30,7 @@ const RatingSwiper = () => {
         weight="semibold"
         className="text-center"
       />
-      <SwiperContainer>
+      <SwiperContainer slideCount={infos.length}>
         {infos.map((el, index) => (
           <SingleRating
             text={t(TranslationsEnums.LANDING_PAGE, `ratings.info[${el}].text`)}

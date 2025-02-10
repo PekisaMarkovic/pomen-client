@@ -33,7 +33,11 @@ const TrubutesAndGetherings = ({ getherings, tributes }: Props) => {
             />
           </div>
 
-          <SwiperContainer speed={1100} autoplaySpeed={4200}>
+          <SwiperContainer
+            speed={1100}
+            autoplaySpeed={4200}
+            slideCount={tributes.length}
+          >
             {tributes.map((tr, index) => (
               <SingleTribute tribute={tr} key={index} />
             ))}
@@ -54,7 +58,12 @@ const TrubutesAndGetherings = ({ getherings, tributes }: Props) => {
               className="text-center"
             />
           </div>
-          <SwiperContainer speed={900} autoplaySpeed={3800}>
+
+          <SwiperContainer
+            speed={900}
+            autoplaySpeed={3800}
+            slideCount={getherings.length}
+          >
             {getherings.map((gd, index) => (
               <SingleGethering gethering={gd} key={index} />
             ))}

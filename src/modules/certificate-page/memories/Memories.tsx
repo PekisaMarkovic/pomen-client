@@ -30,7 +30,7 @@ const Memories = ({ videos, images }: Props) => {
               className="text-center"
             />
           </div>
-          <SwiperContainer>
+          <SwiperContainer slideCount={images.length}>
             {images.map((img, index) => (
               <SingleMemory memory={img} key={index} />
             ))}
@@ -52,7 +52,11 @@ const Memories = ({ videos, images }: Props) => {
             />
           </div>
 
-          <SwiperContainer speed={700} autoplaySpeed={3500}>
+          <SwiperContainer
+            speed={700}
+            autoplaySpeed={3500}
+            slideCount={videos.length}
+          >
             {videos.map((video, index) => (
               <SingleMemory memory={video} key={index} />
             ))}
