@@ -8,6 +8,8 @@ import { formatDateDayMonthYear } from "@/utils/date";
 import Image from "next/image";
 import Link from "next/link";
 import heroBg from "@/app/assets/landing/hero-bg.webp";
+import CertificateImage from "@/modules/certificate-page/partials/CertificateImage";
+import { File } from "@/interfaces/file";
 
 type Props = {
   firstName: string;
@@ -18,7 +20,7 @@ type Props = {
   placeOfDeath: string;
   fullCemeteryName: string;
   location?: LocationPoint;
-  imageUrl: string;
+  profileImage: File;
 };
 
 const CertificateMainInfo = ({
@@ -29,7 +31,7 @@ const CertificateMainInfo = ({
   lastName,
   placeOfBirth,
   placeOfDeath,
-  imageUrl,
+  profileImage,
   location
 }: Props) => {
   const { t } = useCustomTranslation();
@@ -55,11 +57,9 @@ const CertificateMainInfo = ({
       />
 
       <div className="rounded-full overflow-hidden bg-medium-grey">
-        {imageUrl ? (
-          <Image
-            width={146}
-            height={146}
-            src={imageUrl}
+        {profileImage?.url ? (
+          <CertificateImage
+            profileImage={profileImage}
             alt={`${firstName} ${lastName} ${fullCemeteryName}`}
           />
         ) : (

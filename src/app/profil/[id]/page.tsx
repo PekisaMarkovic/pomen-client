@@ -65,7 +65,7 @@ const Profil = async ({ params }: Props) => {
   return (
     <GeneralLayout>
       <CertificateMainInfo
-        imageUrl={profileImage?.url || ""}
+        profileImage={profileImage}
         fullCemeteryName={`${cemetery.address}, ${cemetery.name}, ${
           certificate.cemetery.city?.name || ""
         }`}
