@@ -5,6 +5,9 @@ export enum TranslationsEnums {
   LANDING_PAGE = "landing",
   OUR_GUIDE = "our-guide",
   BLOG_PAGE = "blogs",
+  REFUND_POLICY = "refund-policy",
+  RRIVACY_POLICY = "privacy-policy",
+  TERMS_OF_SERVICE = "terms-of-service",
   SEARCH = "search",
   CERTIFICATE = "certificate",
   ERROR = "error"
@@ -32,8 +35,20 @@ export default getRequestConfig(async () => {
       `../translations/${locale}/${TranslationsEnums.OUR_GUIDE}.json`
     );
 
+    const ourRefundPlicyPageTranslation = await await import(
+      `../translations/${locale}/${TranslationsEnums.REFUND_POLICY}.json`
+    );
+
+    const ourPrivacyPolicyPageTranslation = await await import(
+      `../translations/${locale}/${TranslationsEnums.RRIVACY_POLICY}.json`
+    );
+
     const ourSearchPageTranslation = await await import(
       `../translations/${locale}/${TranslationsEnums.SEARCH}.json`
+    );
+
+    const ourTermsOfServicePageTranslation = await await import(
+      `../translations/${locale}/${TranslationsEnums.TERMS_OF_SERVICE}.json`
     );
 
     const certificatePageTranslation = await await import(
@@ -51,7 +66,10 @@ export default getRequestConfig(async () => {
       ...ourSearchPageTranslation,
       ...certificatePageTranslation,
       ...blogPageTranslation,
-      ...errorTranslation
+      ...ourPrivacyPolicyPageTranslation,
+      ...errorTranslation,
+      ...ourRefundPlicyPageTranslation,
+      ...ourTermsOfServicePageTranslation
     };
   };
 

@@ -1,4 +1,5 @@
 import GeneralLayout from "@/components/layouts/GeneralLayout";
+import PrivacyPolicy from "@/modules/privacy-policy-page/PrivacyPolicy";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,7 +11,11 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <GeneralLayout>
-      <p>Politika Privatnosti</p>
+      <div className="md:flex md:justify-center">
+        <div className="flex flex-col mb-4 md:w-9/12 lg:w-6/12">
+          <PrivacyPolicy />
+        </div>
+      </div>
     </GeneralLayout>
   );
 };

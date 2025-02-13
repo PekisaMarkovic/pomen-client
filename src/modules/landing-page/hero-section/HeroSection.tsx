@@ -5,6 +5,7 @@ import HeroSearch from "@/modules/landing-page/hero-section/partials/HeroSearch"
 import { Heading, MainLink, Paragraph } from "@/components/core";
 import useCustomTranslation from "@/hooks/use-custom-translation";
 import { TranslationsEnums } from "@/i18n/request";
+import ROUTES from "@/components/constants/a-routes";
 
 const HeroSection = () => {
   const { t } = useCustomTranslation();
@@ -47,7 +48,7 @@ const HeroSection = () => {
           />
 
           <MainLink
-            href="#"
+            href={ROUTES.OUR_GUIDE}
             text={t(TranslationsEnums.LANDING_PAGE, "hero.button2")}
             variant="alt"
             size="full"

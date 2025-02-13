@@ -26,6 +26,10 @@ const Footer = () => {
               href={ROUTES.TERMS_OF_USE}
             />
             <FooterLink
+              text={t(TranslationsEnums.LANDING_PAGE, "footer.refund-policy")}
+              href={ROUTES.REFUND_POLICY}
+            />
+            <FooterLink
               text={t(TranslationsEnums.LANDING_PAGE, "footer.contact")}
               href={`${ROUTES.INDEX}/#contact`}
             />

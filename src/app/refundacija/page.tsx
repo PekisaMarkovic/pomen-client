@@ -1,11 +1,11 @@
 import GeneralLayout from "@/components/layouts/GeneralLayout";
-import TermsOfService from "@/modules/terms-of-service-page/TermsOfService";
+import RefundPolicy from "@/modules/refund-policy-page/RefundPolicy";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Uslovi Korišćenja - Platforma koja omogućava deljenje uspomena",
+  title: "Refundacija - Platforma koja omogućava deljenje uspomena",
   description:
-    "Pregledajte uslove korišćenja naše platforme. Saznajte pravila, obaveze i prava korisnika prilikom korišćenja naših usluga."
+    "Saznajte sve o našoj politici refundacije. Pogledajte uslove pod kojima možete zatražiti povrat novca i saznajte više o postupku refundacije."
 };
 
 const Page = () => {
@@ -13,7 +13,7 @@ const Page = () => {
     <GeneralLayout>
       <div className="md:flex md:justify-center">
         <div className="flex flex-col mb-4 md:w-9/12 lg:w-6/12">
-          <TermsOfService />
+          <RefundPolicy />
         </div>
       </div>
     </GeneralLayout>
