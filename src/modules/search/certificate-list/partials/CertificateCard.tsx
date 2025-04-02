@@ -36,7 +36,7 @@ const CertificateCard = ({ cetificate, citiesOptions = [] }: Props) => {
                 alt={`${firstName} ${lastName} ${biography}`}
                 height={56}
                 width={56}
-                className="rounded-full overflow-hidden"
+                className="w-14 h-14 rounded-full overflow-hidden"
               />
             </div>
           ) : (
@@ -74,7 +74,8 @@ const CertificateCard = ({ cetificate, citiesOptions = [] }: Props) => {
             text={biography}
             size="base"
             color="grey"
-            className="mt-2"
+            noWrap
+            className="mt-2 h-[100px]"
           />
         </div>
       </article>

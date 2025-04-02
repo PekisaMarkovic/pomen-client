@@ -1,7 +1,4 @@
-import {
-  getCertificateBySlug,
-  getCertificateOptions
-} from "@/api/certificates";
+import { getCertificateBySlug } from "@/api/certificates";
 import { getFilesBySlug } from "@/api/files";
 import GeneralLayout from "@/components/layouts/GeneralLayout";
 import CertificateMainInfo from "@/modules/certificate-page/CertificateMainInfo";
@@ -23,12 +20,6 @@ export type ProfilParams = {
 type Props = {
   params: ProfilParams;
 };
-
-export async function generateStaticParams() {
-  const certificateOptions = await getCertificateOptions();
-
-  return certificateOptions.map((opt) => opt.slug);
-}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = params;
