@@ -27,6 +27,14 @@ export interface Certificate {
   certificateProfileId: number;
   profileImage: File;
   files: File[];
+  status?: CertificateStatusEnums;
+}
+
+export enum CertificateStatusEnums {
+  DRAFT = "draft",
+  COMPLATED = "completed",
+  PUBLISHED = "published",
+  SUSPENDED = "suspended"
 }
 
 export interface SearchCertificateDto {
@@ -36,6 +44,7 @@ export interface SearchCertificateDto {
   cemeteryId?: number;
   firstName?: string;
   lastName?: string;
+  status?: CertificateStatusEnums;
 }
 
 export interface CertificateOptionsDto {

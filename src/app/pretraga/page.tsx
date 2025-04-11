@@ -3,6 +3,7 @@ import { searchCertificates } from "@/api/certificates";
 import { getCitiesOptions } from "@/api/cities";
 import { MainPaggination } from "@/components/core";
 import GeneralLayout from "@/components/layouts/GeneralLayout";
+import { CertificateStatusEnums } from "@/interfaces/cemeteries";
 import CertificateList from "@/modules/search/certificate-list/CertificateList";
 import SearchFilters from "@/modules/search/search-filters/SearchFilters";
 import {
@@ -41,6 +42,7 @@ export default async function Page({
     page,
     limit,
     firstName,
+    status: CertificateStatusEnums.PUBLISHED,
     ...(lastName ? { lastName } : {}),
     ...(cityId ? { cityId: Number(cityId) } : {}),
     ...(cemeteryId ? { cemeteryId: Number(cemeteryId) } : {})
