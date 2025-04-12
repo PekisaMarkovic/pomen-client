@@ -8,7 +8,6 @@ import { MainLink, Paragraph } from "@/components/core";
 import useCustomTranslation from "@/hooks/use-custom-translation";
 import { TranslationsEnums } from "@/i18n/request";
 import { IPricing, PricingPackagesEnums } from "@/interfaces/pricings";
-import Link from "next/link";
 
 const basic = [
   "Metalna QR kod pločica (aluminijum, crno-bela, UV otporna)",
