@@ -22,6 +22,12 @@ export const fontSizes = (size: FontSize) => {
       return "text-5xl";
     case "6xl":
       return "text-6xl";
+    case "7xl":
+      return "text-7xl";
+    case "8xl":
+      return "text-8xl";
+    case "9xl":
+      return "text-9xl";
     default:
       return "text-base";
   }

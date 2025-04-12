@@ -14,6 +14,10 @@ export const NAVIGATION_LINKS = [
     href: `${ROUTES.INDEX}/#contact`
   },
   {
+    text: "navigation.pricing",
+    href: `${ROUTES.PRICING}`
+  },
+  {
     text: "navigation.blogs",
     href: `${ROUTES.BLOGS}`
   },

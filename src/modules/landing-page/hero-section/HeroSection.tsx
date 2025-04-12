@@ -41,7 +41,7 @@ const HeroSection = () => {
 
         <div className="w-full flex flex-col md:flex-row gap-4">
           <MainLink
-            href="#"
+            href={ROUTES.CREATE_CERTIFICATE}
             text={t(TranslationsEnums.LANDING_PAGE, "hero.button")}
             variant="primary"
             size="full"

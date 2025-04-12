@@ -1,5 +1,5 @@
 {
-  "landing": {
+  "landing-page": {
     "hero": {
       "title": "Sećanje i Poštovanje za Vaše Voljene",
       "subtitle": "Kreirajte personalizovane profile i delite drage uspomene bez napora.",
@@ -126,6 +126,7 @@
     },
     "footer": {
       "about-us": "Naš Vodič",
+      "pricing": "Cenovnik",
       "privacy-policy": " Politika Privatnosti",
       "contact": "Kontakt",
       "term-of-use": "Uslovi Korišćenja",

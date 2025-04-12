@@ -1,3 +1,4 @@
+import ROUTES from "@/components/constants/a-routes";
 import { Heading, MainLink, Paragraph } from "@/components/core";
 import useCustomTranslation from "@/hooks/use-custom-translation";
 import { TranslationsEnums } from "@/i18n/request";
@@ -43,7 +44,7 @@ const JoinUs = () => {
 
         <div className="w-full md:w-1/3">
           <MainLink
-            href="#"
+            href={ROUTES.CREATE_CERTIFICATE}
             text={t(TranslationsEnums.OUR_GUIDE, "join-us.btn")}
             variant="secondary"
             noHoverEffect

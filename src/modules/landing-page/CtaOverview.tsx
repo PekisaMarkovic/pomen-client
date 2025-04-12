@@ -1,3 +1,4 @@
+import ROUTES from "@/components/constants/a-routes";
 import { Heading, MainLink, Paragraph } from "@/components/core";
 import useCustomTranslation from "@/hooks/use-custom-translation";
 import { TranslationsEnums } from "@/i18n/request";
@@ -33,14 +34,14 @@ const CtaOverview = () => {
 
         <div className="flex flex-col md:flex-row gap-2.5">
           <MainLink
-            href="#"
+            href={ROUTES.CREATE_CERTIFICATE}
             text={t(TranslationsEnums.LANDING_PAGE, "cta.btn1")}
             variant="primary"
             size="full"
           />
 
           <MainLink
-            href="#"
+            href={ROUTES.SEARCH}
             text={t(TranslationsEnums.LANDING_PAGE, "cta.btn2")}
             variant="secondary"
             size="full"

@@ -102,7 +102,7 @@ export default async function RootLayout({
         />
       </head>
       <body>
-        <div className="hidden text-black text-white text-grey text-light-grey text-xs text-sm text-base text-lg text-xl text-2xl text-3xl text-4xl text-5xl text-6xl font-thin font-light font-normal font-medium font-semibold font-bold font-extrabold font-black" />
+        <div className="hidden text-black text-white text-grey text-light-grey text-xs text-sm text-base text-lg text-xl text-2xl text-3xl text-4xl text-5xl text-6xl text-7xl text-8xl text-9xl font-thin font-light font-normal font-medium font-semibold font-bold font-extrabold font-black grid-cols-1 grid-cols-6 grid-cols-2 grid-cols-3 grid-cols-4 grid-cols-5 grid-cols-6 grid-cols-6 grid-cols-8 grid-cols-9 grid-cols-10" />
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>

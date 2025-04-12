@@ -1,6 +1,7 @@
 import {
   Certificate,
   CertificateOptionsDto,
+  CertificateStatusEnums,
   SearchCertificateDto
 } from "@/interfaces/cemeteries";
 import { apiForServerSide } from "@/api/axios";
@@ -29,7 +30,8 @@ export const searchCertificates = async (body: SearchCertificateDto) => {
 export const getCertificateBySlug = async (slug: string) => {
   try {
     const { data } = await apiForServerSide.get<Certificate>(
-      `${RESOURCE_URL}/slug/${slug}`
+      `${RESOURCE_URL}/slug/${slug}`,
+      { params: { status: CertificateStatusEnums.PUBLISHED } }
     );
     return data;
   } catch (e) {

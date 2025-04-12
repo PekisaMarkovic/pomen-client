@@ -8,7 +8,9 @@ const TabletNavigation = () => {
 
   return (
     <div className="hidden md:flex xl:hidden justify-center bg-white py-4 px-6">
-      <div className="w-9/12 grid grid-cols-5 gap-x-8">
+      <div
+        className={`w-9/12 grid grid-cols-${NAVIGATION_LINKS.length} gap-x-8`}
+      >
         {NAVIGATION_LINKS.map(({ href, text }, i) => (
           <NavigationLink
             text={t(TranslationsEnums.GENERAL, text)}
