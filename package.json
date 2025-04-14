@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "@vis.gl/react-google-maps": "^1.5.2",
     "axios": "^1.7.9",
     "i18next": "^23.16.2",
     "i18next-resources-to-backend": "^1.2.1",

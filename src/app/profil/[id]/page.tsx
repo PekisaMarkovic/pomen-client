@@ -1,6 +1,7 @@
 import { getCertificateBySlug } from "@/api/certificates";
 import { getFilesBySlug } from "@/api/files";
 import GeneralLayout from "@/components/layouts/GeneralLayout";
+import CertificateLocation from "@/modules/certificate-page/CertificateLocation";
 import CertificateMainInfo from "@/modules/certificate-page/CertificateMainInfo";
 import Memories from "@/modules/certificate-page/memories/Memories";
 import PersonBiography from "@/modules/certificate-page/PersonBiography";
@@ -68,6 +69,8 @@ const Profil = async ({ params }: Props) => {
         placeOfDeath={placeOfDeath}
         location={location}
       />
+
+      <CertificateLocation location={location} />
 
       <PersonBiography biography={biography} />
 
