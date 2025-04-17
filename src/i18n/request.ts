@@ -11,6 +11,7 @@ export enum TranslationsEnums {
   PRICING = "pricing",
   SEARCH = "search",
   CERTIFICATE = "certificate",
+  LEAD = "lead",
   ERROR = "error"
 }
 

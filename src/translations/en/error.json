@@ -1,5 +1,21 @@
 {
   "error": {
-    "fields": {}
+    "input": "Morate uneti",
+    "select": "Morate odabrati",
+    "fields": {
+      "firstNameForCertificate": "ime preminule osobe",
+      "lastNameForCertificate": "ime preminule osobe",
+      "dateOfDeath": "datum",
+      "dateOfBirth": "datum",
+      "dateOfDeathMustBeAfterDateOfBirth": "datum koji nije pre datuma rodjenja",
+      "dateOfBirthCannotBeInFuture": "datum koji nije u buducnosti",
+      "dateOfDeathCannotBeInFuture": "datum koji nije u buducnosti",
+      "firstName": "ime ",
+      "lastName": "prezime",
+      "email": "email",
+      "phoneNumber": "Morate unet broj telefona",
+      "addressOrder": "adresu",
+      "note": "dodatne informacije"
+    }
   }
 }

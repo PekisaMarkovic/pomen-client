@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { style } from "@/components/core/buttons/style";
+import { InfiniteLoader } from "@/app/icons/general";
 
 export type Variant = "secondary" | "primary" | "alt";
 
@@ -46,9 +47,15 @@ const MainButton = ({
       })} ${className}`}
       disabled={disabled}
     >
-      {leftIcon}
-      {text}
-      {rightIcon}
+      {disabled ? (
+        <InfiniteLoader />
+      ) : (
+        <>
+          {leftIcon}
+          {text}
+          {rightIcon}
+        </>
+      )}
     </button>
   );
 };

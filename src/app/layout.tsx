@@ -5,6 +5,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "react-date-range/dist/styles.css"; // main css file
+import "react-date-range/dist/theme/default.css";
 import ogImage from "@/app/assets/seo/or-image.webp";
 import letterBlack from "@/app/assets/general/logo-letter-black.webp";
 import letterWhite from "@/app/assets/general/logo-letter-white.webp";

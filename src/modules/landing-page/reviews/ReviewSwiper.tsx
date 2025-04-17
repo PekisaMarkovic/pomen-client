@@ -19,7 +19,7 @@ const RatingSwiper = () => {
   return (
     <section
       aria-labelledby="ratings-details"
-      className="bg-white p-6 py-8 flex flex-col gap-y-6 overflow-hidden"
+      className="bg-white p-4 py-8 flex flex-col gap-y-6 overflow-hidden"
     >
       <Heading
         id="ratings-title"
@@ -28,7 +28,7 @@ const RatingSwiper = () => {
         size="2xl"
         color="black"
         weight="semibold"
-        className="text-center"
+        className="px-2 text-center"
       />
       <SwiperContainer slideCount={infos.length}>
         {infos.map((el, index) => (

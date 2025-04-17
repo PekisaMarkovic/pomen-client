@@ -18,7 +18,7 @@ const ErrorMessage = ({ name, variant, message }: Props) => {
     <>
       {name && (
         <span className="font-montserrat text-sm text-red">
-          {t(TranslationsEnums.ERROR, `${variant}`)}
+          {t(TranslationsEnums.ERROR, `${variant}`)}{" "}
           {t(TranslationsEnums.ERROR, `fields.${name}`)}
         </span>
       )}

@@ -8,6 +8,8 @@ import UnCheckIcon from "@/app/icons/general/UnCheckIcon";
 import XIcon from "@/app/icons/general/XIcon";
 import UserPlaceholder from "@/app/icons/general/UserPlaceholder";
 import CertificateUser from "@/app/icons/general/CertificateUser";
+import InfiniteLoader from "@/app/icons/general/InfiniteLoader";
+import SelectDropdown from "@/app/icons/general/SelectDropdown";
 
 export {
   CrossIcon,
@@ -19,5 +21,7 @@ export {
   UnCheckIcon,
   CertificateUser,
   XIcon,
-  UserPlaceholder
+  UserPlaceholder,
+  InfiniteLoader,
+  SelectDropdown
 };

@@ -18,7 +18,8 @@ const config: Config = {
         "medium-grey": "var(--medium-grey)",
         "light-grey": "var(--light-grey)",
         "hover-grey": "var(--hover-grey)",
-        "overlay-dark": "var(--overlay-dark)"
+        "overlay-dark": "var(--overlay-dark)",
+        red: "var(--red)"
       },
       boxShadow: {
         faq: "1px 4px 10px 0px #00000040",

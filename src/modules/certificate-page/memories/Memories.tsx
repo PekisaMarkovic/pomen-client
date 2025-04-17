@@ -15,11 +15,11 @@ const Memories = ({ videos, images }: Props) => {
   return (
     <section
       aria-labelledby="memries"
-      className="bg-white p-6 py-8 flex flex-col gap-y-6 overflow-hidden"
+      className="bg-white p-4 py-8 flex flex-col gap-y-6 overflow-hidden"
     >
       {!!images.length && (
         <>
-          <div className="flex items-center justify-center">
+          <div className="px-2 flex items-center justify-center">
             <Heading
               id="ratings-title"
               text={t(TranslationsEnums.CERTIFICATE, "memories.images")}
@@ -40,7 +40,7 @@ const Memories = ({ videos, images }: Props) => {
 
       {!!videos.length && (
         <>
-          <div className="flex items-center justify-center">
+          <div className="px-2 flex items-center justify-center">
             <Heading
               id="ratings-title"
               text={t(TranslationsEnums.CERTIFICATE, "memories.videos")}

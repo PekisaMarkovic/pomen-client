@@ -11,7 +11,7 @@ const SingleMemory = ({ memory }: Props) => {
   return (
     <article className="px-2">
       {type === FileTypeEnum.IMAGE ? (
-        <div className="px-2.5 py-5 rounded-sm h-80 flex items-center justify-center overflow-hidden">
+        <div className="py-5 rounded-sm h-80 flex items-center justify-center overflow-hidden">
           <Image
             width={width}
             height={height}
@@ -20,7 +20,7 @@ const SingleMemory = ({ memory }: Props) => {
           />
         </div>
       ) : (
-        <div className="px-2.5 py-5 rounded-sm flex items-center justify-center overflow-hidden">
+        <div className="py-5 rounded-sm flex items-center justify-center overflow-hidden">
           <iframe src={url} allowFullScreen width={width} height={height} />
         </div>
       )}

@@ -12,7 +12,7 @@ const ContactUs = () => {
       className="px-6 py-8 flex flex-col items-center gap-y-6"
       id="contact"
     >
-      <div className="px-4 py-4 flex flex-col gap-y-6 rounded-sm  shadow-contact md:w-9/12 lg:w-6/12">
+      <div className="px-4 py-4 flex flex-col gap-y-6 rounded-sm  shadow-contact md:w-9/12 lg:w-6/12 w-full">
         <Heading
           id="faq-title"
           text={t(TranslationsEnums.LANDING_PAGE, "contact-us.title")}

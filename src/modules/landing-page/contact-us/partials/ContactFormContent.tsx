@@ -4,18 +4,21 @@ import { createNewMessage } from "@/api/contact";
 import { InputText, InputTextarea, MainButton } from "@/components/core";
 import useCustomTranslation from "@/hooks/use-custom-translation";
 import { TranslationsEnums } from "@/i18n/request";
+import { useState } from "react";
 import { FieldValues, SubmitHandler, useFormContext } from "react-hook-form";
 import { toast } from "react-toastify";
 
 const ContactFormContent = () => {
+  const [btnDisabled, setButtonDisabled] = useState<boolean>(false);
   const { t } = useCustomTranslation();
-  const { handleSubmit } = useFormContext();
+  const { handleSubmit, reset } = useFormContext();
   const messsages = {
     success: t(TranslationsEnums.GENERAL, "successMessage"),
     error: t(TranslationsEnums.GENERAL, "errorMessage")
   };
 
   const onSubmit: SubmitHandler<FieldValues> = async (values) => {
+    setButtonDisabled(true);
     try {
       await createNewMessage({
         email: values.email,
@@ -26,8 +29,12 @@ const ContactFormContent = () => {
       toast(messsages.success);
     } catch {
       toast(messsages.error);
+    } finally {
+      setButtonDisabled(false);
+      reset();
     }
   };
+
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6">
       <InputText
@@ -62,6 +69,7 @@ const ContactFormContent = () => {
       />
 
       <MainButton
+        disabled={btnDisabled}
         noHoverEffect
         htmlType="submit"
         text={t(TranslationsEnums.LANDING_PAGE, "contact-us.btn")}

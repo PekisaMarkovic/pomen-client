@@ -1,0 +1,29 @@
+{
+  "lead": {
+    "title": "Zabelezi uspomenu",
+    "fields": {
+      "note": "Dodatno informacije",
+      "notePlh": "Unesi dodatne informacije",
+      "email": "Email",
+      "emailPlh": "Unesi email",
+      "firstNameForCertificate": "Ime preminule osobe",
+      "firstNameForCertificatePlh": "Unesi ime osobe",
+      "lastNameForCertificate": "Prezime preminule osobe",
+      "lastNameForCertificatePlh": "Unesi prezime osobe",
+      "firstName": "Ime",
+      "firstNamePlh": "Unesi ime",
+      "lastName": "Prezime",
+      "lastNamePlh": "Unesi prezime",
+      "phoneNumber": "Telefon",
+      "phoneNumberPlh": "Unesi broj telefona",
+      "addressOrder": "Adresa",
+      "addressOrderPlh": "Unesi adresu",
+      "dateOfBirth": "Datum rodjenja",
+      "dateOfBirthPlh": "Izaberi datum",
+      "dateOfDeath": "Datum smrti",
+      "dateOfDeathPlh": "Izaberi datum"
+    },
+
+    "btn": "Posalji"
+  }
+}

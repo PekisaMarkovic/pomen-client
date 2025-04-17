@@ -17,11 +17,11 @@ const TrubutesAndGetherings = ({ getherings, tributes }: Props) => {
   return (
     <section
       aria-labelledby="tributes-and-getherings"
-      className="bg-white p-6 py-8 flex flex-col gap-y-6 overflow-hidden"
+      className="bg-white p-4 py-8 flex flex-col gap-y-6 overflow-hidden"
     >
       {!!tributes.length && (
         <>
-          <div className="flex items-center justify-center">
+          <div className="px-2 flex items-center justify-center">
             <Heading
               id="ratings-title"
               text={t(TranslationsEnums.CERTIFICATE, "memories.tributes")}

@@ -1,8 +1,9 @@
 import GeneralLayout from "@/components/layouts/GeneralLayout";
+import CreateLeadPage from "@/modules/create-lead-page/CreateLeadPage";
 import { Metadata } from "next";
 
 export type CreateCertificateParams = {
-  id: string;
+  id: number;
 };
 
 type Props = {
@@ -17,7 +18,11 @@ export const metadata: Metadata = {
 const CreateCertificate = async ({ params }: Props) => {
   const { id } = params;
 
-  return <GeneralLayout>{JSON.stringify(id)}</GeneralLayout>;
+  return (
+    <GeneralLayout>
+      <CreateLeadPage pricingId={id} />
+    </GeneralLayout>
+  );
 };
 
 export default CreateCertificate;
