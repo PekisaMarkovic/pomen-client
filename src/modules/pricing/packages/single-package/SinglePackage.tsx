@@ -1,8 +1,3 @@
-import {
-  BasicPackageIcon,
-  PremiumPackageIcon,
-  StandardPackageIcon
-} from "@/app/icons/pricing";
 import ROUTES from "@/components/constants/a-routes";
 import { MainLink, Paragraph } from "@/components/core";
 import useCustomTranslation from "@/hooks/use-custom-translation";
@@ -58,13 +53,13 @@ const SinglePackage = ({ pckg }: SinglePackageProps) => {
   const showIcon = () => {
     switch (pckg.plan) {
       case PricingPackagesEnums.BASIC:
-        return <BasicPackageIcon height="50" width="50" />;
+        return "🕯";
 
       case PricingPackagesEnums.PREMIUM:
-        return <PremiumPackageIcon height="50" width="50" />;
+        return "🌳";
 
       case PricingPackagesEnums.STANDARD:
-        return <StandardPackageIcon height="50" width="50" />;
+        return "🔗";
     }
   };
 
@@ -86,7 +81,12 @@ const SinglePackage = ({ pckg }: SinglePackageProps) => {
 
   return (
     <div className="flex flex-col items-center gap-y-5 px-4 py-5 bg-overlay-dark rounded-sm">
-      {showIcon()}
+      <Paragraph
+        text={`${showIcon()}`}
+        weight="semibold"
+        color="white"
+        size="5xl"
+      />
 
       <Paragraph
         text={t(TranslationsEnums.PRICING, `plan.${pckg.plan}`)}
