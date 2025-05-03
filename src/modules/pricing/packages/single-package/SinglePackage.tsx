@@ -113,8 +113,8 @@ const SinglePackage = ({ pckg }: SinglePackageProps) => {
       />
 
       <div className="w-full flex flex-col gap-4">
-        {showContent().map((par) => (
-          <div className="min-h-16 flex gap-2">
+        {showContent().map((par, i) => (
+          <div className="min-h-16 flex gap-2" key={i}>
             <div>
               <Paragraph text={"-"} color="white" size="base" />
             </div>

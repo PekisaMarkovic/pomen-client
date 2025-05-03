@@ -2,7 +2,13 @@
 
 import { createLead } from "@/api/leads";
 import ROUTES from "@/components/constants/a-routes";
-import { InputText, InputTextarea, MainButton } from "@/components/core";
+import {
+  Heading,
+  InputText,
+  InputTextarea,
+  MainButton,
+  Paragraph
+} from "@/components/core";
 import DateSelect from "@/components/core/select/DateSelect";
 import useCustomTranslation from "@/hooks/use-custom-translation";
 import { TranslationsEnums } from "@/i18n/request";
@@ -47,6 +53,21 @@ const LeadFormContent = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6">
+      <Heading
+        id="certificate-info"
+        text={t(TranslationsEnums.LEAD, "user.title")}
+        variant="3"
+        size="2xl"
+        color="black"
+        weight="semibold"
+        className="text-center"
+      />
+      <Paragraph
+        size="sm"
+        text={t(TranslationsEnums.LEAD, "user.description")}
+        color="grey"
+      />
+
       <InputText
         isRequired
         name="firstNameForCertificate"
@@ -56,7 +77,6 @@ const LeadFormContent = () => {
           "fields.firstNameForCertificatePlh"
         )}
       />
-
       <InputText
         isRequired
         name="lastNameForCertificate"
@@ -66,7 +86,6 @@ const LeadFormContent = () => {
           "fields.lastNameForCertificatePlh"
         )}
       />
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <DateSelect
           isRequired
@@ -82,51 +101,56 @@ const LeadFormContent = () => {
           placeholder={t(TranslationsEnums.LEAD, "fields.dateOfDeathPlh")}
         />
       </div>
-
-      <div className="h-px w-full bg-black my-6" />
-
+      <Heading
+        id="certificate-info"
+        text={t(TranslationsEnums.LEAD, "certificate.title")}
+        variant="3"
+        size="2xl"
+        color="black"
+        weight="semibold"
+        className="text-center"
+      />
+      <Paragraph
+        size="sm"
+        text={t(TranslationsEnums.LEAD, "certificate.description")}
+        color="grey"
+      />
       <InputText
         isRequired
         name="firstName"
         label={t(TranslationsEnums.LEAD, "fields.firstName")}
         placeholder={t(TranslationsEnums.LEAD, "fields.firstNamePlh")}
       />
-
       <InputText
         isRequired
         name="lastName"
         label={t(TranslationsEnums.LEAD, "fields.lastName")}
         placeholder={t(TranslationsEnums.LEAD, "fields.lastNamePlh")}
       />
-
       <InputText
         isRequired
         name="email"
         label={t(TranslationsEnums.LEAD, "fields.email")}
         placeholder={t(TranslationsEnums.LEAD, "fields.emailPlh")}
       />
-
       <InputText
         isRequired
         name="phoneNumber"
         label={t(TranslationsEnums.LEAD, "fields.phoneNumber")}
         placeholder={t(TranslationsEnums.LEAD, "fields.phoneNumberPlh")}
       />
-
       <InputText
         isRequired
         name="addressOrder"
         label={t(TranslationsEnums.LEAD, "fields.addressOrder")}
         placeholder={t(TranslationsEnums.LEAD, "fields.addressOrderPlh")}
       />
-
       <InputTextarea
         name="note"
         label={t(TranslationsEnums.LEAD, "fields.note")}
         placeholder={t(TranslationsEnums.LEAD, "fields.notePlh")}
         maxChar={480}
       />
-
       <MainButton
         disabled={btnDisabled}
         noHoverEffect

@@ -24,6 +24,14 @@
       "dateOfDeathPlh": "Izaberi datum"
     },
 
-    "btn": "Posalji"
+    "btn": "Posalji",
+    "user": {
+      "title": "👤 Podaci o osobi koja naručuje",
+      "description": "Unesite svoje podatke kako bismo mogli da vas kontaktiramo i obradimo vašu narudžbinu. Ovi podaci neće biti javno prikazani."
+    },
+    "certificate": {
+      "title": "🕊 Podaci o preminuloj osobi",
+      "description": "Molimo vas da unesete osnovne podatke o osobi u čiju uspomenu želite da kreirate profil. Ovi podaci će biti prikazani na memorijalnoj stranici."
+    }
   }
 }

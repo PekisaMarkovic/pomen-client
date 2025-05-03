@@ -20,7 +20,7 @@ const PricingPackages = async () => {
       <div className="pb-12 flex flex-col gap-y-6 md:w-9/12 lg:w-6/12 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           {packages.map((pckg) => (
-            <SinglePackage pckg={pckg} />
+            <SinglePackage pckg={pckg} key={pckg.pricingId} />
           ))}
         </div>
       </div>
